@@ -1,0 +1,150 @@
+@import 'header';
+@import 'banner';
+
+.products{
+    width: 100%;
+    .public{
+        text-align: center;
+        .products-btn{
+            width: 58px;
+            height: 58px;
+            border-radius: 58px;
+            border: none;
+            margin-top: 44px;
+            margin-bottom: 48px;
+            background-image: url(../../dist/images/products-btn.png);
+            background-repeat: no-repeat;
+            
+        }
+        h1{
+            font-weight:bolder;
+            color: @colorProducts;
+        }
+        p{
+           color: @colorProducts; 
+        }
+        .products-spans{
+            width: 100%;
+            padding: 20px 0 50px 0;
+            padding-left:520px;
+               .products-span{
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 6px;
+                    border: 1px solid @banner-span-bg;
+                    background-color: @banner-span-bg;
+                    float: left;
+                    cursor: pointer;
+                    margin-left: 10px;
+                   &:hover{
+                       background: @Products-span-bg-hover;
+                   }
+                } 
+           
+            
+        }
+        .pro{
+            width: 100%;
+            .pro-spans{
+                width: 30px;
+                float: left;
+                padding: 6px  19px 12px 1px;
+                height: 152px;
+                .pro-span{
+                    width: 10px;
+                    height: 10px;
+                    display: block;
+                    margin-top: 50px;
+                    border-radius: 10px;
+                    border: 1px solid #e4e5ea;
+                    &:hover{
+                        background-color: #c7e6ff;
+                        border: 2px solid #e4e5ea;
+                    }
+                }
+            }
+            .pro-content{
+                float: right;
+                height: 150px;
+                .pro-img{
+                    display: block;
+                    float:left ;
+                }
+                .pro-study{
+                    float: right;
+                    width: 630px;
+                    padding-left: 10px;
+                    h1{
+                      text-align: left; 
+                      padding-top: 10px;
+                      color: @colorProducts;
+                   }
+                   .pen-line{
+                      padding-bottom: 12px;
+                   }
+                   .pen{}
+                   .bird{
+                       width: 100%;
+                       img.bird{
+                           display: block;
+                           width: 96px;
+                           height: 96px;
+                           float: left;
+                           padding-right: 10px;
+                       }
+                       h3{
+                           padding-left: 10px;
+                           text-align: left;
+                          
+                       }
+                       p{
+                           text-align: left;
+                           padding-left: 10px;
+                       }
+                   }
+                   .pro-img-btn{
+                       width: 100%;
+                       position: relative;
+                       padding-top: 17px;
+                       padding-bottom: 14px;
+                       img{
+                           width: 100%;
+                       }
+                       button{
+                           width: 29px;
+                           height: 29px;
+                           border-radius: 29px;
+                           border: none;
+                           &.pro-btn-left{
+                               position: absolute;
+                               top: 15px;
+                               left: 0;
+                               background-image: url(../../dist/images/banner-btn-left.png);
+                               &:hover{
+                                   background-image: url(../../dist/images/banner-btn-left-hover.png);
+                               }
+                           }
+                           &.pro-btn-right{
+                               position: absolute;
+                               top: 15px;
+                               right: 0;
+                               background-image: url(../../dist/images/banner-btn-right.png);
+                               &:hover{
+                                   background-image: url(../../dist/images/banner-btn-right-hover.png);
+                               }
+                           }
+                       }
+                   }
+                   i{
+                       width: 100%;
+                       line-height: 20px;
+                       text-align: left !important;
+                       font-style: normal;
+                   }
+                   
+                }
+            }
+        }
+    }
+    
+}
