@@ -1,81 +1,84 @@
 @import "var";
 .banner{
     width: 100%;
-    height:593px;
-    background-image: url(../../dist/images/banner01_bg.jpg);
-    background-repeat: no-repeat;
-    .public{
-        position: relative;
-        .banner-imgs{
-            width:668px;
-            height: 202px;
-            position: absolute;
-            top: 202px;
-            right: 30px;
-            img{
-                padding-top:10px
+    position: relative;
+    img{
+        width: 100%;
+        display: block;
+    }
+    .banner-po{
+        width: 100%;
+        height: 30px;
+        position:absolute;
+        bottom:25px;
+        .banner-ul{
+            width:217px;
+            height:30px;
+            margin: 0 auto;
+            li{
+                float: left;
+                &.btn-left{
+                        width:29px;
+                        height: 29px;
+                        border-radius: 29px;
+                        border: none;
+                        cursor: pointer;
+                        background-image: url(../../dist/images/banner-btn-left.png);
+                        &:hover{
+                            background-image: url(../../dist/images/banner-btn-left-hover.png);
+                        }
+                }
+                &.center{
+                    width: 45px;
+                    height: 14px;
+                    padding: 7px 50px;
+                    background-image: url(../../dist/images/pro-content-line.png);
+                    background-repeat: no-repeat;
+                    background-position-y: center;
+                    .spans{
+                        width:45px;
+                        height: 14px;
+                        background: #e7eefe; 
+                        border-radius: 8px;
+                        border: 1px solid #eae6e3;
+                        span{
+                            width: 6px;
+                            height: 6px;
+                            display: block;
+                            background-color: #ded7d1;
+                            border-radius: 100%;
+                            float:left;
+                            margin-left:7px; 
+                            margin-top: 4px; 
+                            &:hover{
+                                background-color: blue;
+                            }
+                            &.active{
+                                background-color: blue;
+                            }
+                        }
+                    }
+                }
+                &.btn-right{
+                        width:29px ;
+                        height: 29px;
+                        border-radius: 100%;
+                        border: none;
+                        cursor: pointer;
+                        outline: none;
+                        background-image: url(../../dist/images/banner-btn-right.png);
+                        &:hover{
+                            background-image: url(../../dist/images/banner-btn-right-hover.png);
+                        }
+                }
             }
             
-        }
-        .banner-spans{
-            width: 43px;
-            margin: 0 auto;
-            position: absolute;
-            left:calc(1120px/2);
-            top: 528px;
-            .span{
-                width: 6px;
-                display: block;
-                height: 6px;
-                border-radius:6px;
-                border: 1px solid @banner-span-bg;
-                background-color: @banner-span-bg;
-                float: left;
-                outline: none;
-                cursor: pointer;
-                margin-left: 6px;
-                &:hover{
-                    background: @banner-span-bg-hover;
-                }
-                
-                
-            }
-            .banner-btn-left{
-                    width:29px;
-                    height: 29px;
-                    position: absolute;
-                    top: -13px;
-                    left: -50px;
-                    border-radius: 29px;
-                    border: none;
-                    outline: none;
-                    cursor: pointer;
-                    background-image: url(../../dist/images/banner-btn-left.png);
-                    &:hover{
-                        background-image: url(../../dist/images/banner-btn-left-hover.png);
-                    }
-            }
-            .banner-btn-rigth{
-                    width:29px ;
-                    height: 29px;
-                    position: absolute;
-                    top: -13px ;
-                    right: -50px;
-                    cursor: pointer;
-                     border-radius: 29px;
-                     border: none;
-                     outline: none;
-                    background-image: url(../../dist/images/banner-btn-right.png);
-                    &:hover{
-                        background-image: url(../../dist/images/banner-btn-right-hover.png);
-                    }
-            }
-        }
-        p{
-            text-align: left;
-           
+            
         }
     }
-    
-    
 }
+    
+    
+    
+
+ 

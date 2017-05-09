@@ -1,8 +1,12 @@
 @import 'header';
 @import 'banner';
+@import 'normalize';
+@import 'var';
 
 .products{
     width: 100%;
+    height: 800px;
+    background-color: #f1f2f6;
     .public{
         text-align: center;
         .products-btn{
@@ -27,7 +31,7 @@
             width: 100%;
             padding: 20px 0 50px 0;
             padding-left:520px;
-               .products-span{
+               span{
                     width: 6px;
                     height: 6px;
                     border-radius: 6px;
@@ -50,7 +54,7 @@
                 float: left;
                 padding: 6px  19px 12px 1px;
                 height: 152px;
-                .pro-span{
+                span{
                     width: 10px;
                     height: 10px;
                     display: block;
@@ -140,10 +144,160 @@
                        line-height: 20px;
                        text-align: left !important;
                        font-style: normal;
+                       color: #000;
+                   }
+                   .quotes{
+                       width: 200px;
+                       height: 50px;
+                       padding-top: 20px;
+                       float: right;
+                       .quotes-left{
+                           width: 20px;
+                           height: 18px;
+                           cursor: pointer;
+                           background-image: url(../../dist/images/quote-left.png);
+                           &:hover{
+                              background-image: url(../../dist/images/quote-left-hover.png); 
+                           }
+                       }
+                       .quote-right{
+                           width: 20px;
+                           height: 18px;
+                           float: right;
+                           margin-top: 10px;
+                           cursor: pointer;
+                           background-image: url(../../dist/images/quote-right.png);
+                           &:hover{
+                              
+                               background-image: url(../../dist/images/quote-right-hover.png);
+                           }
+                       }
                    }
                    
                 }
             }
+        }
+    }
+    
+}
+.introduction{
+    width: 100%;
+    padding-top: ;
+    background-size: 100%;
+    background-image: url(../../dist/images/introduction-bg.jpg);
+    h1{
+        text-align: center;
+       margin: 0;
+       color: #fff;
+       padding: 60px 0 10px 0;
+    }
+    p{
+        text-align: center;
+        color: #fff;
+        padding-bottom: 10px;
+    }
+    .intro-spans{
+        width: 100%;
+        padding-bottom: 20px;
+        .spans{
+            width: 50px;
+            height: 10px;
+            margin: 0 auto;
+            padding-top: 4px;
+            span{
+                width: 6px;
+                height: 6px;
+                border-radius: 100%;
+                float: left;
+                margin-left: 10px;
+                background-color: darkgrey;
+                &:hover{
+                   background-color: #5c7da8; 
+                }
+                &.active{
+                    background-color: #5c7da8;  
+                }
+            }
+        }
+    }
+    .intro{
+        width: 100%;
+        img{
+            display: block;
+            float: left;
+            padding-right: 25px;
+            padding-bottom:30px ;
+        }
+        .intro-article{
+            width: 725px;
+            float: right;
+            h3{
+                color: #fff;
+                padding-top: 10px;
+                text-align: left;
+               
+            }
+            .pen-line{
+                padding-top: 40px;
+            }
+            .pen{
+               padding-left: 0;
+            }
+            .intro-art1{
+                width: 100%;
+                padding-top: 30px;
+                 .art{
+                      width: 600px;
+                      float: right;
+                      text-align: left;
+                      
+                      h3{
+                          color: #fff;
+                      }
+                      p{
+                          text-align: left;
+                          line-height: 25px;
+                      }
+                  }
+            }
+            .pro-content-line{
+                width: 100%;
+                padding: 30px 0;
+                
+            }
+            i{
+                color: #FFFFFF;
+                font-style: normal;
+                line-height: 25px;
+            }
+            .quotes{
+                       width: 200px;
+                       height: 50px;
+                       padding-top: 20px;
+                       float: right;
+                       .quotes-left{
+                           width: 20px;
+                           height: 18px;
+                           cursor: pointer;
+                           background-image: url(../../dist/images/quote-left.png);
+                           &:hover{
+                              background-image: url(../../dist/images/quote-left-hover.png); 
+                           }
+                       }
+                       .quote-right{
+                           width: 20px;
+                           height: 18px;
+                           float: right;
+                           margin-top: 10px;
+                           cursor: pointer;
+                           background-image: url(../../dist/images/quote-right.png);
+                           &:hover{
+                              
+                               background-image: url(../../dist/images/quote-right-hover.png);
+                           }
+                       }
+                   }
+            
         }
     }
     

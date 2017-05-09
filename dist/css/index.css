@@ -1,0 +1,859 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "microsoft yahei";
+}
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.public {
+  width: 1120px;
+  margin: 0 auto;
+}
+.clear {
+  clear: both;
+}
+button,
+span {
+  cursor: pointer;
+  outline: none;
+}
+.header {
+  width: 100%;
+  height: 120px;
+  background-image: url(../images/header_bg.jpg);
+}
+.header .logo {
+  display: block;
+  float: left;
+}
+.header .nav {
+  float: right;
+  text-align: center;
+}
+.header .nav .list {
+  float: left;
+  position: relative;
+  padding: 46px 13px 0 13px;
+}
+.header .nav .list .list-li {
+  display: block;
+  float: left;
+  padding-right: 5px;
+  padding-top: 7px;
+}
+.header .nav .list a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.header .nav .list .arrow {
+  float: right;
+  width: 25px;
+  display: block;
+  height: 25px;
+  margin-left: 5px;
+  background-image: url(../../dist/images/nav_arrow.png);
+  background-repeat: no-repeat;
+}
+.header .nav .list .nav-now {
+  display: block;
+  padding-top: 7px;
+  padding-left: 45px;
+}
+.header .nav .list .lis {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  font-size: 15px;
+}
+.header .nav .list .lis li {
+  color: #FFF;
+  padding: 5px 0;
+}
+.header .nav .list .lis li:hover {
+  background-color: blueviolet ;
+  padding-left: 10px;
+  transition: padding-left 0.3s;
+}
+.header .nav .list .lis li:hover:after {
+  content: url(../../dist/images/nav_li_bg.png);
+  float: right;
+  padding-left: 5px;
+  padding-right: 3px;
+}
+.header .nav .list:hover .arrow {
+  background-image: url(../../dist/images/nav_arrow_hover.png);
+}
+.header .nav .list:hover .lis {
+  display: block;
+}
+.banner {
+  width: 100%;
+  position: relative;
+}
+.banner img {
+  width: 100%;
+  display: block;
+}
+.banner .banner-po {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  bottom: 25px;
+}
+.banner .banner-po .banner-ul {
+  width: 217px;
+  height: 30px;
+  margin: 0 auto;
+}
+.banner .banner-po .banner-ul li {
+  float: left;
+}
+.banner .banner-po .banner-ul li.btn-left {
+  width: 29px;
+  height: 29px;
+  border-radius: 29px;
+  border: none;
+  cursor: pointer;
+  background-image: url(../../dist/images/banner-btn-left.png);
+}
+.banner .banner-po .banner-ul li.btn-left:hover {
+  background-image: url(../../dist/images/banner-btn-left-hover.png);
+}
+.banner .banner-po .banner-ul li.center {
+  width: 45px;
+  height: 14px;
+  padding: 7px 50px;
+  background-image: url(../../dist/images/pro-content-line.png);
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+.banner .banner-po .banner-ul li.center .spans {
+  width: 45px;
+  height: 14px;
+  background: #e7eefe;
+  border-radius: 8px;
+  border: 1px solid #eae6e3;
+}
+.banner .banner-po .banner-ul li.center .spans span {
+  width: 6px;
+  height: 6px;
+  display: block;
+  background-color: #ded7d1;
+  border-radius: 100%;
+  float: left;
+  margin-left: 7px;
+  margin-top: 4px;
+}
+.banner .banner-po .banner-ul li.center .spans span:hover {
+  background-color: blue;
+}
+.banner .banner-po .banner-ul li.center .spans span.active {
+  background-color: blue;
+}
+.banner .banner-po .banner-ul li.btn-right {
+  width: 29px ;
+  height: 29px;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-image: url(../../dist/images/banner-btn-right.png);
+}
+.banner .banner-po .banner-ul li.btn-right:hover {
+  background-image: url(../../dist/images/banner-btn-right-hover.png);
+}
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0;
+}
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block;
+}
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+.products {
+  width: 100%;
+  height: 800px;
+  background-color: #f1f2f6;
+}
+.products .public {
+  text-align: center;
+}
+.products .public .products-btn {
+  width: 58px;
+  height: 58px;
+  border-radius: 58px;
+  border: none;
+  margin-top: 44px;
+  margin-bottom: 48px;
+  background-image: url(../../dist/images/products-btn.png);
+  background-repeat: no-repeat;
+}
+.products .public h1 {
+  font-weight: bolder;
+  color: #593d6a;
+}
+.products .public p {
+  color: #593d6a;
+}
+.products .public .products-spans {
+  width: 100%;
+  padding: 20px 0 50px 0;
+  padding-left: 520px;
+}
+.products .public .products-spans span {
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  border: 1px solid grey;
+  background-color: grey;
+  float: left;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.products .public .products-spans span:hover {
+  background: #226ba9;
+}
+.products .public .pro {
+  width: 100%;
+}
+.products .public .pro .pro-spans {
+  width: 30px;
+  float: left;
+  padding: 6px  19px 12px 1px;
+  height: 152px;
+}
+.products .public .pro .pro-spans span {
+  width: 10px;
+  height: 10px;
+  display: block;
+  margin-top: 50px;
+  border-radius: 10px;
+  border: 1px solid #e4e5ea;
+}
+.products .public .pro .pro-spans span:hover {
+  background-color: #c7e6ff;
+  border: 2px solid #e4e5ea;
+}
+.products .public .pro .pro-content {
+  float: right;
+  height: 150px;
+}
+.products .public .pro .pro-content .pro-img {
+  display: block;
+  float: left ;
+}
+.products .public .pro .pro-content .pro-study {
+  float: right;
+  width: 630px;
+  padding-left: 10px;
+}
+.products .public .pro .pro-content .pro-study h1 {
+  text-align: left;
+  padding-top: 10px;
+  color: #593d6a;
+}
+.products .public .pro .pro-content .pro-study .pen-line {
+  padding-bottom: 12px;
+}
+.products .public .pro .pro-content .pro-study .bird {
+  width: 100%;
+}
+.products .public .pro .pro-content .pro-study .bird img.bird {
+  display: block;
+  width: 96px;
+  height: 96px;
+  float: left;
+  padding-right: 10px;
+}
+.products .public .pro .pro-content .pro-study .bird h3 {
+  padding-left: 10px;
+  text-align: left;
+}
+.products .public .pro .pro-content .pro-study .bird p {
+  text-align: left;
+  padding-left: 10px;
+}
+.products .public .pro .pro-content .pro-study .pro-img-btn {
+  width: 100%;
+  position: relative;
+  padding-top: 17px;
+  padding-bottom: 14px;
+}
+.products .public .pro .pro-content .pro-study .pro-img-btn img {
+  width: 100%;
+}
+.products .public .pro .pro-content .pro-study .pro-img-btn button {
+  width: 29px;
+  height: 29px;
+  border-radius: 29px;
+  border: none;
+}
+.products .public .pro .pro-content .pro-study .pro-img-btn button.pro-btn-left {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  background-image: url(../../dist/images/banner-btn-left.png);
+}
+.products .public .pro .pro-content .pro-study .pro-img-btn button.pro-btn-left:hover {
+  background-image: url(../../dist/images/banner-btn-left-hover.png);
+}
+.products .public .pro .pro-content .pro-study .pro-img-btn button.pro-btn-right {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  background-image: url(../../dist/images/banner-btn-right.png);
+}
+.products .public .pro .pro-content .pro-study .pro-img-btn button.pro-btn-right:hover {
+  background-image: url(../../dist/images/banner-btn-right-hover.png);
+}
+.products .public .pro .pro-content .pro-study i {
+  width: 100%;
+  line-height: 20px;
+  text-align: left !important;
+  font-style: normal;
+  color: #000;
+}
+.products .public .pro .pro-content .pro-study .quotes {
+  width: 200px;
+  height: 50px;
+  padding-top: 20px;
+  float: right;
+}
+.products .public .pro .pro-content .pro-study .quotes .quotes-left {
+  width: 20px;
+  height: 18px;
+  cursor: pointer;
+  background-image: url(../../dist/images/quote-left.png);
+}
+.products .public .pro .pro-content .pro-study .quotes .quotes-left:hover {
+  background-image: url(../../dist/images/quote-left-hover.png);
+}
+.products .public .pro .pro-content .pro-study .quotes .quote-right {
+  width: 20px;
+  height: 18px;
+  float: right;
+  margin-top: 10px;
+  cursor: pointer;
+  background-image: url(../../dist/images/quote-right.png);
+}
+.products .public .pro .pro-content .pro-study .quotes .quote-right:hover {
+  background-image: url(../../dist/images/quote-right-hover.png);
+}
+.introduction {
+  width: 100%;
+  padding-top: ;
+  background-size: 100%;
+  background-image: url(../../dist/images/introduction-bg.jpg);
+}
+.introduction h1 {
+  text-align: center;
+  margin: 0;
+  color: #fff;
+  padding: 60px 0 10px 0;
+}
+.introduction p {
+  text-align: center;
+  color: #fff;
+  padding-bottom: 10px;
+}
+.introduction .intro-spans {
+  width: 100%;
+  padding-bottom: 20px;
+}
+.introduction .intro-spans .spans {
+  width: 50px;
+  height: 10px;
+  margin: 0 auto;
+  padding-top: 4px;
+}
+.introduction .intro-spans .spans span {
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  float: left;
+  margin-left: 10px;
+  background-color: darkgrey;
+}
+.introduction .intro-spans .spans span:hover {
+  background-color: #5c7da8;
+}
+.introduction .intro-spans .spans span.active {
+  background-color: #5c7da8;
+}
+.introduction .intro {
+  width: 100%;
+}
+.introduction .intro img {
+  display: block;
+  float: left;
+  padding-right: 25px;
+  padding-bottom: 30px ;
+}
+.introduction .intro .intro-article {
+  width: 725px;
+  float: right;
+}
+.introduction .intro .intro-article h3 {
+  color: #fff;
+  padding-top: 10px;
+  text-align: left;
+}
+.introduction .intro .intro-article .pen-line {
+  padding-top: 40px;
+}
+.introduction .intro .intro-article .pen {
+  padding-left: 0;
+}
+.introduction .intro .intro-article .intro-art1 {
+  width: 100%;
+  padding-top: 30px;
+}
+.introduction .intro .intro-article .intro-art1 .art {
+  width: 600px;
+  float: right;
+  text-align: left;
+}
+.introduction .intro .intro-article .intro-art1 .art h3 {
+  color: #fff;
+}
+.introduction .intro .intro-article .intro-art1 .art p {
+  text-align: left;
+  line-height: 25px;
+}
+.introduction .intro .intro-article .pro-content-line {
+  width: 100%;
+  padding: 30px 0;
+}
+.introduction .intro .intro-article i {
+  color: #FFFFFF;
+  font-style: normal;
+  line-height: 25px;
+}
+.introduction .intro .intro-article .quotes {
+  width: 200px;
+  height: 50px;
+  padding-top: 20px;
+  float: right;
+}
+.introduction .intro .intro-article .quotes .quotes-left {
+  width: 20px;
+  height: 18px;
+  cursor: pointer;
+  background-image: url(../../dist/images/quote-left.png);
+}
+.introduction .intro .intro-article .quotes .quotes-left:hover {
+  background-image: url(../../dist/images/quote-left-hover.png);
+}
+.introduction .intro .intro-article .quotes .quote-right {
+  width: 20px;
+  height: 18px;
+  float: right;
+  margin-top: 10px;
+  cursor: pointer;
+  background-image: url(../../dist/images/quote-right.png);
+}
+.introduction .intro .intro-article .quotes .quote-right:hover {
+  background-image: url(../../dist/images/quote-right-hover.png);
+}
