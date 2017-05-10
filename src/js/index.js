@@ -1,4 +1,25 @@
-//banner 
+//header.js
+$(function(){
+	$('.header .nav .list ').hover(function(){
+		$(this).children('.lis').stop().slideDown(600);
+	},function(){
+		$(this).children('.lis').slideUp(100);
+	})
+
+
+
+
+
+
+
+
+
+
+});
+
+
+
+//banner
 $(function(){
 	var img = ['dist/images/banner01_bg.jpg','dist/images/banner02_bg.jpg','dist/images/banner01_bg.jpg']
 	var index = 0;

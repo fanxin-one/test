@@ -51,6 +51,7 @@ span {
 .header .nav .list {
   float: left;
   position: relative;
+  height: 71px;
   padding: 46px 13px 0 13px;
 }
 .header .nav .list .list-li {
@@ -82,14 +83,17 @@ span {
   display: none;
   position: absolute;
   z-index: 2;
+  width: 180px;
+  margin-top: 40px;
   font-size: 15px;
+  background-color: #332347;
 }
 .header .nav .list .lis li {
   color: #FFF;
-  padding: 5px 0;
+  padding: 15px 0;
 }
 .header .nav .list .lis li:hover {
-  background-color: blueviolet ;
+  background-color: #3498db ;
   padding-left: 10px;
   transition: padding-left 0.3s;
 }
@@ -97,11 +101,8 @@ span {
   content: url(../../dist/images/nav_li_bg.png);
   float: right;
   padding-left: 5px;
-  padding-right: 3px;
+  padding-right: 6px;
 }
 .header .nav .list:hover .arrow {
   background-image: url(../../dist/images/nav_arrow_hover.png);
-}
-.header .nav .list:hover .lis {
-  display: block;
 }

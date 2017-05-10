@@ -74,3 +74,96 @@
 .banner .banner-po .banner-ul li.btn-right:hover {
   background-image: url(../../dist/images/banner-btn-right-hover.png);
 }
+.banner .imgs {
+  width: 100%;
+  top: 180px;
+  position: absolute;
+}
+.banner .imgs .imgs_1 {
+  display: none;
+}
+.banner .imgs .imgs_1 .img1 {
+  width: 638px;
+  height: 39px;
+  padding-left: 0%;
+}
+.banner .imgs .imgs_1 .img1 img {
+  width: 100%;
+}
+.banner .imgs .imgs_1 .img2 {
+  width: 545px;
+  height: 36px;
+  padding-top: 40px;
+  float: right;
+  padding-right: 0%;
+}
+.banner .imgs .imgs_1 .img2 img {
+  width: 100%;
+}
+.banner .imgs .imgs_1 .img3 {
+  width: 596px;
+  height: 20px;
+  padding-top: 90px;
+  padding-left: 40%;
+}
+.banner .imgs .imgs_1 .img3 img {
+  width: 100%;
+}
+.banner .imgs .imgs_2 .img4 {
+  width: 181px;
+  height: 52px;
+  padding-top: -35px;
+  padding-left: 0%;
+}
+.banner .imgs .imgs_2 .img4 img {
+  width: 100%;
+}
+.banner .imgs .imgs_2 .img5 {
+  width: 223px;
+  height: 397px;
+  padding-top: 10px;
+  float: right;
+  padding-right: 60%;
+}
+.banner .imgs .imgs_2 .img5 img {
+  width: 100%;
+}
+.banner .imgs .imgs_2 .img6 {
+  width: 63px;
+  height: 19px;
+  padding-top: 10px;
+  padding-left: 30%;
+}
+.banner .imgs .imgs_2 .img6 img {
+  width: 100%;
+}
+.banner .imgs .imgs_3 {
+  display: none;
+}
+.banner .imgs .imgs_3 .img7 {
+  width: 181px;
+  height: 52px;
+  padding-left: 0%;
+}
+.banner .imgs .imgs_3 .img7 img {
+  width: 100%;
+}
+.banner .imgs .imgs_3 .img8 {
+  width: 223px;
+  height: 397px;
+  padding-top: 40px;
+  float: right;
+  padding-right: 0%;
+}
+.banner .imgs .imgs_3 .img8 img {
+  width: 100%;
+}
+.banner .imgs .imgs_3 .img9 {
+  width: 596px;
+  height: 20px;
+  padding-top: 90px;
+  padding-left: 40%;
+}
+.banner .imgs .imgs_3 .img9 img {
+  width: 100%;
+}
