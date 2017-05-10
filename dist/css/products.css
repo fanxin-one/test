@@ -1,0 +1,397 @@
+.products {
+  width: 100%;
+  height: 1000px;
+  background-color: #f1f2f6;
+}
+.products .public {
+  text-align: center;
+}
+.products .public .products-btn {
+  width: 58px;
+  height: 58px;
+  border-radius: 58px;
+  border: none;
+  margin-top: 44px;
+  margin-bottom: 48px;
+  background-image: url(../../dist/images/products-btn.png);
+  background-repeat: no-repeat;
+}
+.products .public h1 {
+  font-weight: bolder;
+  color: #593d6a;
+}
+.products .public p {
+  color: #593d6a;
+  font-family: KaiTi_GB2312;
+  line-height: 25px;
+}
+.products .public .products-spans {
+  width: 100%;
+  padding: 20px 0 50px 0;
+  padding-left: 520px;
+}
+.products .public .products-spans span {
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  border: 1px solid grey;
+  background-color: blue;
+  float: left;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.products .public .pro {
+  width: 100%;
+  position: relative;
+}
+.products .public .pro .pro-spans {
+  width: 30px;
+  float: left;
+  padding: 6px  19px 12px 1px;
+  height: 152px;
+}
+.products .public .pro .pro-spans span {
+  width: 10px;
+  height: 10px;
+  display: block;
+  margin-top: 50px;
+  border-radius: 10px;
+  border: 1px solid #e4e5ea;
+}
+.products .public .pro .pro-spans span:hover {
+  background-color: blue;
+  border: 2px solid #e4e5ea;
+}
+.products .public .pro .pro-img-btn {
+  width: 614px;
+  height: 29px;
+  background-image: url(../../dist/images/pro-content-line.png);
+  background-repeat-y: no-repeat;
+  background-position-y: center ;
+  position: absolute;
+  top: 250px;
+  right: 10px;
+  z-index: 4;
+}
+.products .public .pro .pro-img-btn button {
+  width: 29px;
+  height: 29px;
+  border-radius: 29px;
+  border: none;
+}
+.products .public .pro .pro-img-btn button.pro-btn-left {
+  float: left;
+  background-image: url(../../dist/images/banner-btn-left.png);
+}
+.products .public .pro .pro-img-btn button.pro-btn-left:hover {
+  background-image: url(../../dist/images/banner-btn-left-hover.png);
+}
+.products .public .pro .pro-img-btn button.pro-btn-right {
+  float: right;
+  background-image: url(../../dist/images/banner-btn-right.png);
+}
+.products .public .pro .pro-img-btn button.pro-btn-right:hover {
+  background-image: url(../../dist/images/banner-btn-right-hover.png);
+}
+.products .public .pro .contents {
+  position: relative;
+  width: 1040px;
+  margin-left: 100px;
+}
+.products .public .pro .contents .content1 {
+  position: absolute;
+  width: 1040px;
+  display: none;
+  float: right;
+  height: 440px;
+}
+.products .public .pro .contents .content1 .pro-img {
+  display: block;
+  float: left ;
+  padding-right: 30px;
+}
+.products .public .pro .contents .content1 .pro-study {
+  float: right;
+  width: 630px;
+  padding-left: 10px;
+  text-align: left;
+}
+.products .public .pro .contents .content1 .pro-study .penImg {
+  width: 619px;
+  height: 72px;
+}
+.products .public .pro .contents .content1 .pro-study .penImg h1 {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  margin: 0;
+  color: #593d6a;
+}
+.products .public .pro .contents .content1 .pro-study .penImg .pen-line {
+  width: 558px;
+  height: 2px;
+  float: left;
+  background-image: url(../../dist/images/pen_line.png);
+}
+.products .public .pro .contents .content1 .pro-study .penImg .pen {
+  width: 61px;
+  height: 54px;
+  float: left;
+  margin-top: -50px;
+  background-image: url(../../dist/images/pen.png);
+}
+.products .public .pro .contents .content1 .pro-study .bird {
+  width: 100%;
+  padding: 24px 0;
+}
+.products .public .pro .contents .content1 .pro-study .bird img.bird {
+  display: block;
+  width: 96px;
+  height: 96px;
+  float: left;
+  padding-right: 10px;
+}
+.products .public .pro .contents .content1 .pro-study .bird h3 {
+  padding-left: 10px;
+  text-align: left;
+}
+.products .public .pro .contents .content1 .pro-study .bird p {
+  line-height: 25px;
+  padding-left: 10px;
+}
+.products .public .pro .contents .content1 .pro-study .art-i {
+  padding: 20px 0;
+}
+.products .public .pro .contents .content1 .pro-study .art-i i {
+  width: 100%;
+  line-height: 25px;
+  text-align: left !important;
+  font-style: normal;
+  color: #000;
+}
+.products .public .pro .contents .content1 .pro-study .quotes {
+  width: 200px;
+  height: 50px;
+  padding-top: 20px;
+  float: right;
+}
+.products .public .pro .contents .content1 .pro-study .quotes .quotes-left {
+  width: 20px;
+  height: 18px;
+  cursor: pointer;
+  float: left;
+  margin-top: -12px;
+  background-image: url(../../dist/images/quote-left.png);
+}
+.products .public .pro .contents .content1 .pro-study .quotes .quotes-left:hover {
+  background-image: url(../../dist/images/quote-left-hover.png);
+}
+.products .public .pro .contents .content1 .pro-study .quotes i {
+  float: left;
+  font-style: normal;
+}
+.products .public .pro .contents .content1 .pro-study .quotes .quote-right {
+  width: 20px;
+  height: 18px;
+  float: right;
+  margin-top: 12px;
+  cursor: pointer;
+  background-image: url(../../dist/images/quote-right.png);
+}
+.products .public .pro .contents .content1 .pro-study .quotes .quote-right:hover {
+  background-image: url(../../dist/images/quote-right-hover.png);
+}
+.products .public .pro .contents .content2 {
+  position: absolute;
+  width: 1040px;
+  float: right;
+  height: 440px;
+  display: none;
+}
+.products .public .pro .contents .content2 .pro-img2 {
+  float: left;
+  display: block;
+  padding-right: 30px;
+}
+.products .public .pro .contents .content2 .pro-study2 {
+  width: 630px;
+  float: right;
+  text-align: left;
+}
+.products .public .pro .contents .content2 .pro-study2 .penImg2 {
+  width: 619px;
+  height: 72px;
+}
+.products .public .pro .contents .content2 .pro-study2 .penImg2 h1 {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  margin: 0;
+  color: #593d6a;
+}
+.products .public .pro .contents .content2 .pro-study2 .penImg2 .pen-line {
+  width: 558px;
+  height: 2px;
+  float: left;
+  background-image: url(../../dist/images/pen_line.png);
+}
+.products .public .pro .contents .content2 .pro-study2 .penImg2 .pen {
+  width: 61px;
+  height: 54px;
+  float: left;
+  margin-top: -50px;
+  background-image: url(../../dist/images/pen.png);
+}
+.products .public .pro .contents .content2 .pro-study2 .art-i2 {
+  padding: 20px 0;
+}
+.products .public .pro .contents .content2 .pro-study2 .art-i2 p {
+  line-height: 25px;
+}
+.products .public .pro .contents .content2 .pro-study2 .art-i2 p span {
+  font-size: 40px;
+}
+.products .public .pro .contents .content2 .pro-study2 .quotes {
+  width: 190px;
+  height: 50px;
+  padding-top: 100px;
+  float: right;
+}
+.products .public .pro .contents .content2 .pro-study2 .quotes .quotes-left {
+  width: 20px;
+  height: 18px;
+  cursor: pointer;
+  float: left;
+  margin-top: -12px;
+  background-image: url(../../dist/images/quote-left.png);
+}
+.products .public .pro .contents .content2 .pro-study2 .quotes .quotes-left:hover {
+  background-image: url(../../dist/images/quote-left-hover.png);
+}
+.products .public .pro .contents .content2 .pro-study2 .quotes i {
+  float: left;
+  font-style: normal;
+}
+.products .public .pro .contents .content2 .pro-study2 .quotes .quote-right {
+  width: 20px;
+  height: 18px;
+  float: right;
+  margin-top: 12px;
+  cursor: pointer;
+  background-image: url(../../dist/images/quote-right.png);
+}
+.products .public .pro .contents .content2 .pro-study2 .quotes .quote-right:hover {
+  background-image: url(../../dist/images/quote-right-hover.png);
+}
+.products .public .pro .contents .content3,
+.products .public .pro .contents .content5 {
+  float: right;
+  width: 1040px;
+  position: absolute;
+  height: 440px;
+  display: none;
+}
+.products .public .pro .contents .content3 .pro-img3,
+.products .public .pro .contents .content5 .pro-img3 {
+  float: left;
+  display: block;
+  padding-right: 30px;
+}
+.products .public .pro .contents .content3 .pro-study2,
+.products .public .pro .contents .content5 .pro-study2 {
+  width: 630px;
+  float: right;
+  text-align: left;
+}
+.products .public .pro .contents .content3 .pro-study2 .penImg2,
+.products .public .pro .contents .content5 .pro-study2 .penImg2 {
+  width: 619px;
+  height: 72px;
+}
+.products .public .pro .contents .content3 .pro-study2 .penImg2 h1,
+.products .public .pro .contents .content5 .pro-study2 .penImg2 h1 {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  margin: 0;
+  color: #593d6a;
+}
+.products .public .pro .contents .content3 .pro-study2 .penImg2 .pen-line,
+.products .public .pro .contents .content5 .pro-study2 .penImg2 .pen-line {
+  width: 558px;
+  height: 2px;
+  float: left;
+  background-image: url(../../dist/images/pen_line.png);
+}
+.products .public .pro .contents .content3 .pro-study2 .penImg2 .pen,
+.products .public .pro .contents .content5 .pro-study2 .penImg2 .pen {
+  width: 61px;
+  height: 54px;
+  float: left;
+  margin-top: -50px;
+  background-image: url(../../dist/images/pen.png);
+}
+.products .public .pro .contents .content3 .pro-study2 .art-i2,
+.products .public .pro .contents .content5 .pro-study2 .art-i2 {
+  padding: 55px 0;
+}
+.products .public .pro .contents .content3 .pro-study2 .art-i2 p,
+.products .public .pro .contents .content5 .pro-study2 .art-i2 p {
+  line-height: 25px;
+}
+.products .public .pro .content4,
+.products .public .pro .content6 {
+  float: right;
+  width: 1040px;
+  position: absolute;
+  height: 440px;
+  display: none;
+}
+.products .public .pro .content4 .pro-img4,
+.products .public .pro .content6 .pro-img4 {
+  float: left;
+  display: block;
+  padding-right: 30px;
+}
+.products .public .pro .content4 .pro-study2,
+.products .public .pro .content6 .pro-study2 {
+  width: 630px;
+  float: right;
+  text-align: left;
+}
+.products .public .pro .content4 .pro-study2 .penImg2,
+.products .public .pro .content6 .pro-study2 .penImg2 {
+  width: 619px;
+  height: 72px;
+}
+.products .public .pro .content4 .pro-study2 .penImg2 h1,
+.products .public .pro .content6 .pro-study2 .penImg2 h1 {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  margin: 0;
+  color: #593d6a;
+}
+.products .public .pro .content4 .pro-study2 .penImg2 .pen-line,
+.products .public .pro .content6 .pro-study2 .penImg2 .pen-line {
+  width: 558px;
+  height: 2px;
+  float: left;
+  background-image: url(../../dist/images/pen_line.png);
+}
+.products .public .pro .content4 .pro-study2 .penImg2 .pen,
+.products .public .pro .content6 .pro-study2 .penImg2 .pen {
+  width: 61px;
+  height: 54px;
+  float: left;
+  margin-top: -50px;
+  background-image: url(../../dist/images/pen.png);
+}
+.products .public .pro .content4 .pro-study2 .art-i2,
+.products .public .pro .content6 .pro-study2 .art-i2 {
+  padding: 40px  0;
+}
+.products .public .pro .content4 .pro-study2 .art-i2 p,
+.products .public .pro .content6 .pro-study2 .art-i2 p {
+  line-height: 25px;
+}
