@@ -26,7 +26,6 @@
            line-height: 25px;
         }
         .products-spans{
-            width: 100%;
             padding: 20px 0 50px 0;
             padding-left:520px;
                span{
@@ -47,21 +46,37 @@
             width: 100%;
             position: relative;
             .pro-spans{
-                width: 30px;
+                width: 19px;
                 float: left;
-                padding: 6px  19px 12px 1px;
-                height: 152px;
+                margin-top: 30px;
+                height: 380px;
+                background-image: url(../../dist/images/pro-line-.png);
+                background-repeat: no-repeat;
+                background-position-x: center;
                 span{
-                    width: 10px;
-                    height: 10px;
+                    width: 11px;
+                    height: 11px;
                     display: block;
-                    margin-top: 50px;
-                    border-radius: 10px;
-                    border: 1px solid #e4e5ea;
+                    border-radius: 11px;
+                    margin-top: 64px;
+                    background-image: url(../../dist/images/pro-span.png);
+                    background-position-x: -2px;
+                    background-repeat: no-repeat;
+                    transform:rotate(180deg);
                     &:hover{
-                        background-color: blue;
-                        border: 2px solid #e4e5ea;
+                        background-image: url(../../dist/images/pro-nav.png);
+                        background-repeat: no-repeat;
+                        background-position-y: -11px;
+                        transition: background-position-y 0.3s;
                     }
+                    &.active{
+                        width:18px;
+                        height: 18px;
+                        border-radius: 100%;
+                         background-image: url(../../dist/images/pro-span-first.png);
+                         background-repeat: no-repeat;
+                    }
+                    
                 }
             }
             .pro-img-btn{
@@ -105,22 +120,26 @@
                 position: relative;
                 width: 1040px;
                 margin-left: 100px;
+                height: 440px;
+                overflow: hidden;
                 .content1{
                     position: absolute;
                     width: 1040px;
                     display: none;
                     float: right;
                     height: 440px;
-//                  right: -1040px;
-                    
                     .pro-img{
                         display: block;
-                        float:left ;
+                        position: absolute;
+                        left: 0;
+                        right: 0;
                         padding-right: 30px;
                     }
                     .pro-study{
-                        float: right;
-                        width: 630px;
+                        width: 640px;
+                        position: absolute;
+                        left: 400px;
+                        right:0px;
                         padding-left: 10px;
                         text-align: left;
                         .penImg{
@@ -160,10 +179,12 @@
                            h3{
                                padding-left: 10px;
                                text-align: left;
+                               color: #565559;
                            }
                            p{
                                line-height: 25px;
                                padding-left: 10px;
+                               color: #565559;
                            }
                        }
                        .art-i{
@@ -173,7 +194,7 @@
                                 line-height: 25px;
                                 text-align: left !important;
                                 font-style: normal;
-                                color: #000;
+                                color: #565559;
                             } 
                        }
                        .quotes{
@@ -219,13 +240,17 @@
                     height: 440px;
                     display: none;
                     .pro-img2{
-                       float: left; 
+                       position: absolute;
+                       left: 0;
+                       right: 0; 
                        display: block;
                        padding-right: 30px;
                     }
                     .pro-study2{
-                        width: 630px;
-                        float: right;
+                        width: 640px;
+                        position: absolute;
+                        left: 400px;
+                        right: 0;
                         text-align: left;
                        .penImg2{
                             width: 619px;
@@ -255,6 +280,7 @@
                            padding: 20px 0;
                            p{
                                line-height: 25px;
+                               color: #565559;
                                span{
                                    font-size: 40px;
                                }
@@ -279,6 +305,7 @@
                            i{
                                float: left;
                                font-style: normal;
+                               color: #565559;
                            }
                            .quote-right{
                                width: 20px;
@@ -302,17 +329,19 @@
                     position: absolute;
                     height: 440px;
                     display: none;
-                    .pro-img3{
-                       float: left; 
+                    .pro-img3,.pro-img4{
                        display: block;
                        padding-right: 30px;
                     }
                     .pro-study2{
-                        width: 630px;
-                        float: right;
+                        width: 640px;
+                        position: absolute;
+                        left: 400px;
+                        right: 0;
+                        top:-1px;
                         text-align: left;
                        .penImg2{
-                            width: 619px;
+                            width:619px; 
                             height: 72px;
                             h1{
                                 display:inline-block;
@@ -339,27 +368,32 @@
                            padding: 55px 0;
                                p{
                                     line-height: 25px;
+                                    color: #565559;
                                }
                            }
                        }
                        
                         
                     }
-                }
-                .content4,.content6{
+                
+                .content4, .content6{
                     float: right;
                     width: 1040px;
                     position: absolute;
                     height: 440px;
                     display: none;
                     .pro-img4{
-                       float: left; 
+                       position: absolute;
+                       left: 0;
+                       right: 0; 
                        display: block;
                        padding-right: 30px;
                     }
                     .pro-study2{
-                        width: 630px;
-                        float: right;
+                        width: 640px;
+                        position: absolute;
+                        left: 400px;
+                        right: 0;
                         text-align: left;
                        .penImg2{
                             width: 619px;
@@ -389,64 +423,19 @@
                            padding: 40px  0;
                                p{
                                     line-height: 25px;
+                                    color: #565559;
                                }
                            }
                        }
                     }
-//              .content5{
-//                  float: right;
-//                  height: 150px;
-//                  
-//                  .pro-img4{
-//                     float: left; 
-//                     display: block;
-//                     padding-right: 30px;
-//                  }
-//                  .pro-study2{
-//                      width: 630px;
-//                      float: right;
-//                      text-align: left;
-//                     .penImg2{
-//                          width: 619px;
-//                          height: 72px;
-//                          h1{
-//                              display:inline-block;
-//                              padding-top: 10px;
-//                              padding-bottom: 25px;
-//                              margin: 0;
-//                              color: @colorProducts;
-//                         }
-//                         .pen-line{
-//                             width: 558px;
-//                             height: 2px;
-//                             float: left;
-//                             background-image: url(../../dist/images/pen_line.png);
-//                         }
-//                         .pen{
-//                             width: 61px;
-//                             height: 54px;
-//                             float: left;
-//                             margin-top: -50px;
-//                             background-image: url(../../dist/images/pen.png);
-//                         }
-//                     }
-//                     .art-i2{
-//                         padding: 50px  0;
-//                             p{
-//                                  line-height: 25px;
-//                             }
-//                         }
-//                     }
-//                  }
+  
+         
+         
+         
+         
             }
          
-         
-         
-         
-         
-         
-         
-         
+        } 
             
     }
 }

@@ -710,7 +710,6 @@ template {
   line-height: 25px;
 }
 .products .public .products-spans {
-  width: 100%;
   padding: 20px 0 50px 0;
   padding-left: 520px;
 }
@@ -729,22 +728,37 @@ template {
   position: relative;
 }
 .products .public .pro .pro-spans {
-  width: 30px;
+  width: 19px;
   float: left;
-  padding: 6px  19px 12px 1px;
-  height: 152px;
+  margin-top: 30px;
+  height: 380px;
+  background-image: url(../../dist/images/pro-line-.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
 }
 .products .public .pro .pro-spans span {
-  width: 10px;
-  height: 10px;
+  width: 11px;
+  height: 11px;
   display: block;
-  margin-top: 50px;
-  border-radius: 10px;
-  border: 1px solid #e4e5ea;
+  border-radius: 11px;
+  margin-top: 64px;
+  background-image: url(../../dist/images/pro-span.png);
+  background-position-x: -2px;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
 }
 .products .public .pro .pro-spans span:hover {
-  background-color: blue;
-  border: 2px solid #e4e5ea;
+  background-image: url(../../dist/images/pro-nav.png);
+  background-repeat: no-repeat;
+  background-position-y: -11px;
+  transition: background-position-y 0.3s;
+}
+.products .public .pro .pro-spans span.active {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-image: url(../../dist/images/pro-span-first.png);
+  background-repeat: no-repeat;
 }
 .products .public .pro .pro-img-btn {
   width: 614px;
@@ -781,6 +795,8 @@ template {
   position: relative;
   width: 1040px;
   margin-left: 100px;
+  height: 440px;
+  overflow: hidden;
 }
 .products .public .pro .contents .content1 {
   position: absolute;
@@ -791,12 +807,16 @@ template {
 }
 .products .public .pro .contents .content1 .pro-img {
   display: block;
-  float: left ;
+  position: absolute;
+  left: 0;
+  right: 0;
   padding-right: 30px;
 }
 .products .public .pro .contents .content1 .pro-study {
-  float: right;
-  width: 630px;
+  width: 640px;
+  position: absolute;
+  left: 400px;
+  right: 0px;
   padding-left: 10px;
   text-align: left;
 }
@@ -838,10 +858,12 @@ template {
 .products .public .pro .contents .content1 .pro-study .bird h3 {
   padding-left: 10px;
   text-align: left;
+  color: #565559;
 }
 .products .public .pro .contents .content1 .pro-study .bird p {
   line-height: 25px;
   padding-left: 10px;
+  color: #565559;
 }
 .products .public .pro .contents .content1 .pro-study .art-i {
   padding: 20px 0;
@@ -851,7 +873,7 @@ template {
   line-height: 25px;
   text-align: left !important;
   font-style: normal;
-  color: #000;
+  color: #565559;
 }
 .products .public .pro .contents .content1 .pro-study .quotes {
   width: 200px;
@@ -893,13 +915,17 @@ template {
   display: none;
 }
 .products .public .pro .contents .content2 .pro-img2 {
-  float: left;
+  position: absolute;
+  left: 0;
+  right: 0;
   display: block;
   padding-right: 30px;
 }
 .products .public .pro .contents .content2 .pro-study2 {
-  width: 630px;
-  float: right;
+  width: 640px;
+  position: absolute;
+  left: 400px;
+  right: 0;
   text-align: left;
 }
 .products .public .pro .contents .content2 .pro-study2 .penImg2 {
@@ -931,6 +957,7 @@ template {
 }
 .products .public .pro .contents .content2 .pro-study2 .art-i2 p {
   line-height: 25px;
+  color: #565559;
 }
 .products .public .pro .contents .content2 .pro-study2 .art-i2 p span {
   font-size: 40px;
@@ -955,6 +982,7 @@ template {
 .products .public .pro .contents .content2 .pro-study2 .quotes i {
   float: left;
   font-style: normal;
+  color: #565559;
 }
 .products .public .pro .contents .content2 .pro-study2 .quotes .quote-right {
   width: 20px;
@@ -976,15 +1004,19 @@ template {
   display: none;
 }
 .products .public .pro .contents .content3 .pro-img3,
-.products .public .pro .contents .content5 .pro-img3 {
-  float: left;
+.products .public .pro .contents .content5 .pro-img3,
+.products .public .pro .contents .content3 .pro-img4,
+.products .public .pro .contents .content5 .pro-img4 {
   display: block;
   padding-right: 30px;
 }
 .products .public .pro .contents .content3 .pro-study2,
 .products .public .pro .contents .content5 .pro-study2 {
-  width: 630px;
-  float: right;
+  width: 640px;
+  position: absolute;
+  left: 400px;
+  right: 0;
+  top: -1px;
   text-align: left;
 }
 .products .public .pro .contents .content3 .pro-study2 .penImg2,
@@ -1022,69 +1054,202 @@ template {
 .products .public .pro .contents .content3 .pro-study2 .art-i2 p,
 .products .public .pro .contents .content5 .pro-study2 .art-i2 p {
   line-height: 25px;
+  color: #565559;
 }
-.products .public .pro .content4,
-.products .public .pro .content6 {
+.products .public .pro .contents .content4,
+.products .public .pro .contents .content6 {
   float: right;
   width: 1040px;
   position: absolute;
   height: 440px;
   display: none;
 }
-.products .public .pro .content4 .pro-img4,
-.products .public .pro .content6 .pro-img4 {
-  float: left;
+.products .public .pro .contents .content4 .pro-img4,
+.products .public .pro .contents .content6 .pro-img4 {
+  position: absolute;
+  left: 0;
+  right: 0;
   display: block;
   padding-right: 30px;
 }
-.products .public .pro .content4 .pro-study2,
-.products .public .pro .content6 .pro-study2 {
-  width: 630px;
-  float: right;
+.products .public .pro .contents .content4 .pro-study2,
+.products .public .pro .contents .content6 .pro-study2 {
+  width: 640px;
+  position: absolute;
+  left: 400px;
+  right: 0;
   text-align: left;
 }
-.products .public .pro .content4 .pro-study2 .penImg2,
-.products .public .pro .content6 .pro-study2 .penImg2 {
+.products .public .pro .contents .content4 .pro-study2 .penImg2,
+.products .public .pro .contents .content6 .pro-study2 .penImg2 {
   width: 619px;
   height: 72px;
 }
-.products .public .pro .content4 .pro-study2 .penImg2 h1,
-.products .public .pro .content6 .pro-study2 .penImg2 h1 {
+.products .public .pro .contents .content4 .pro-study2 .penImg2 h1,
+.products .public .pro .contents .content6 .pro-study2 .penImg2 h1 {
   display: inline-block;
   padding-top: 10px;
   padding-bottom: 25px;
   margin: 0;
   color: #593d6a;
 }
-.products .public .pro .content4 .pro-study2 .penImg2 .pen-line,
-.products .public .pro .content6 .pro-study2 .penImg2 .pen-line {
+.products .public .pro .contents .content4 .pro-study2 .penImg2 .pen-line,
+.products .public .pro .contents .content6 .pro-study2 .penImg2 .pen-line {
   width: 558px;
   height: 2px;
   float: left;
   background-image: url(../../dist/images/pen_line.png);
 }
-.products .public .pro .content4 .pro-study2 .penImg2 .pen,
-.products .public .pro .content6 .pro-study2 .penImg2 .pen {
+.products .public .pro .contents .content4 .pro-study2 .penImg2 .pen,
+.products .public .pro .contents .content6 .pro-study2 .penImg2 .pen {
   width: 61px;
   height: 54px;
   float: left;
   margin-top: -50px;
   background-image: url(../../dist/images/pen.png);
 }
-.products .public .pro .content4 .pro-study2 .art-i2,
-.products .public .pro .content6 .pro-study2 .art-i2 {
+.products .public .pro .contents .content4 .pro-study2 .art-i2,
+.products .public .pro .contents .content6 .pro-study2 .art-i2 {
   padding: 40px  0;
 }
-.products .public .pro .content4 .pro-study2 .art-i2 p,
-.products .public .pro .content6 .pro-study2 .art-i2 p {
+.products .public .pro .contents .content4 .pro-study2 .art-i2 p,
+.products .public .pro .contents .content6 .pro-study2 .art-i2 p {
   line-height: 25px;
+  color: #565559;
+}
+.business {
+  width: 100%;
+  background-color: #f1f2f6;
+}
+.business .title {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+.business .title img.business-title {
+  width: 108px;
+  height: 171px;
+}
+.business .title h1 {
+  margin-bottom: 0;
+  font-size: 54px;
+  color: #311759;
+}
+.business .title p {
+  margin-top: 0;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+.business .business-ul {
+  width: 100%;
+  min-height: 116px;
+  max-height: calc(546px);
+  padding: 30px 0;
+  border-bottom: 2px dashed #e0e0e2;
+}
+.business .business-ul li {
+  height: 116px;
+  float: left;
+}
+.business .business-ul li.font {
+  font-size: 90px;
+  color: #b5b6ba;
+  padding: 0 90px 0 10px;
+}
+.business .business-ul li.art-1 {
+  text-align: right;
+  width: 250px;
+  padding: 30px 30px 0 30px;
+}
+.business .business-ul li.art-1 h4 {
+  font-size: 24px;
+  color: #311759;
+}
+.business .business-ul li.art-1 p {
+  font-size: 14px;
+}
+.business .business-ul li.cimg {
+  width: 116px;
+  height: 116px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.business .business-ul li.art-2 {
+  padding: 20px 40px 0 30px;
+}
+.business .business-ul li.art-2 p {
+  line-height: 24px;
+}
+.business .business-ul li.btn {
+  width: 67px;
+  height: 67px;
+  border-radius: 100%;
+  background-image: url(../../dist/images/business-btn.png);
+  margin-top: 20px;
+  cursor: pointer;
+}
+.business .business-ul .art-3 {
+  width: 100%;
+  min-height: 220px ;
+  max-height: 400px;
+  display: none;
+  padding: 20px 0 0 222px ;
+}
+.business .business-ul .art-3 .p {
+  width: 787px;
+}
+.business .business-ul .art-3 .p p {
+  text-indent: 30px;
+  line-height: 24px;
+  padding-bottom: 30px;
+}
+.team {
+  width: 100%;
+  background-color: #f1f2f6;
+}
+.team .title {
+  width: 100%;
+  text-align: center;
+  padding: 60px 0;
+}
+.team .title img.business-title {
+  width: 31px;
+  height: 94px;
+}
+.team .title h1 {
+  margin-bottom: 0;
+  font-size: 54px;
+  color: #311759;
+}
+.team .title p {
+  margin-top: 0;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+.team .members {
+  width: 100%;
+  height: 255px;
+  background: bisque;
+  padding-bottom: 175px;
+}
+.team .members .member li {
+  width: 537px;
+  height: 200px;
+  margin-top: 70px ;
+  border: 1px solid #e0e1e5;
+  background-color: gainsboro;
+}
+.team .members .member li.left {
+  float: left;
+}
+.team .members .member li.right {
+  float: right;
 }
 .introduction {
   width: 100%;
-  padding-top: ;
+  padding-bottom: 127px;
   background-size: 100%;
   background-image: url(../../dist/images/introduction-bg.jpg);
-  overflow: hidden;
 }
 .introduction h1 {
   text-align: center;
@@ -1162,8 +1327,10 @@ template {
   line-height: 25px;
 }
 .introduction .intro .intro-article .pro-content-line {
-  width: 100%;
-  padding: 30px 0;
+  width: 725px;
+  height: 2px;
+  background-image: url(../../dist/images/pro-content-line.png);
+  margin: 30px 0;
 }
 .introduction .intro .intro-article i {
   color: #FFFFFF;

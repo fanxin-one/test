@@ -11,6 +11,16 @@ $(function(){
 
 //banner
 $(function(){
+	$('.banner .banner-po .banner-ul .btn-left').hover(function(){
+		$(this).addClass('animated bounceIn');
+	},function(){
+		$(this).removeClass('animated bounceIn');
+	});
+	$('.banner .banner-po .banner-ul .btn-right').hover(function(){
+		$(this).addClass('animated bounceIn');
+	},function(){
+		$(this).removeClass('animated bounceIn');
+	});
 	var img = ['dist/images/banner01_bg.jpg','dist/images/banner02_bg.jpg','dist/images/banner01_bg.jpg']
 	var index = 0;
 	
@@ -99,111 +109,124 @@ $(function(){
 
 //products 
 $(function(){
+	
 	function content_right(){
-		$('.products .pro  .contents .content1').css('right','-1040px');
-		$('.products .pro  .contents .content2').css('right','-1040px');
-		$('.products .pro  .contents .content3').css('right','-1040px');
-		$('.products .pro  .contents .content4').css('right','-1040px');
-		$('.products .pro  .contents .content5').css('right','-1040px');
-		$('.products .pro  .contents .content5').css('right','-1040px');
+		$('.products .pro  .contents .content1').css('left','800px');
+		$('.products .pro  .contents .content2').css('left','800px');
+		$('.products .pro  .contents .content3').css('left','800px');
+		$('.products .pro  .contents .content4').css('left','800px');
+		$('.products .pro  .contents .content5').css('left','800px');
+		$('.products .pro  .contents .content6').css('left','800px');
 	}
 //	content_right();
 	function content_left(){
-		$('.products .pro  .contents .content1').css('left','-1040px');
-		$('.products .pro  .contents .content2').css('left','-1040px');
-		$('.products .pro  .contents .content3').css('left','-1040px');
-		$('.products .pro  .contents .content4').css('left','-1040px');
-		$('.products .pro  .contents .content5').css('left','-1040px');
-		$('.products .pro  .contents .content5').css('left','-1040px');
+		$('.products .pro  .contents .content1').css('left','-800px');
+		$('.products .pro  .contents .content2').css('left','-800px');
+		$('.products .pro  .contents .content3').css('left','-800px');
+		$('.products .pro  .contents .content4').css('left','-800px');
+		$('.products .pro  .contents .content5').css('left','-800px');
+		$('.products .pro  .contents .content6').css('left','-800px');
 	}
 	function content1_right(){
 		content_right();
-		$('.products .pro  .contents .content1').fadeIn();
+		$('.products .pro  .contents .content1').show();
 		$('.products .pro  .contents .content1').siblings().hide();
-		$('.products .pro .contents .content1').animate({right:0},1000);
+		$('.products .pro  .contents .content1').animate({left:0},600);
+		
 	}
-	content1_right();
+//	content1_right();
 	function content1_left(){
-		content_right();
-		$('.products .pro  .contents .content1').fadeIn();
+		content_left();
+		$('.products .pro  .contents .content1').show();
 		$('.products .pro  .contents .content1').siblings().hide();
-		$('.products .pro .contents .content1').animate({left:0},1000);
+		$('.products .pro  .contents .content1').animate({left:0},600);
 	}
 //	content1_left();
 	//content2
 	function content2_right(){
 		content_right();
-		$('.products .pro  .contents .content2').fadeIn();
+		$('.products .pro  .contents .content2').show();
 		$('.products .pro  .contents .content2').siblings().hide();
-		$('.products .pro  .contents .content2').animate({right:0},1000);
+		$('.products .pro  .contents .content2').animate({left:0},600);
 	}
 	function content2_left(){
-		content_right();
-		$('.products .pro  .contents .content2').fadeIn();
+		content_left();
+		$('.products .pro  .contents .content2').show();
 		$('.products .pro  .contents .content2').siblings().hide();
-		$('.products .pro  .contents .content2').animate({left:0},1000);
+		$('.products .pro  .contents .content2').animate({left:0},600);
 	}
 	//content3
 	function content3_right(){
 		content_right();
-		$('.products .pro  .contents .content3').fadeIn();
+		$('.products .pro  .contents .content3').show();
 		$('.products .pro  .contents .content3').siblings().hide();
-		$('.products .pro  .contents .content3').animate({right:0},1000);
+		$('.products .pro  .contents .content3').animate({left:0},600);
 	}
 	function content3_left(){
-		content_right();
-		$('.products .pro  .contents .content3').fadeIn();
+		content_left();
+		$('.products .pro  .contents .content3').show();
 		$('.products .pro  .contents .content3').siblings().hide();
-		$('.products .pro  .contents .content3').animate({left:0},1000);
+		$('.products .pro  .contents .content3').animate({left:0},600);
 	}
 	//content4
 	function content4_right(){
 		content_right();
-		$('.products .pro  .contents .content4').fadeIn();
+		$('.products .pro  .contents .content4').show();
 		$('.products .pro  .contents .content4').siblings().hide();
-		$('.products .pro  .contents .content4').animate({right:0},1000);
+		$('.products .pro  .contents .content4').animate({left:0},600);
 	}
 	function content4_left(){
-		content_right();
-		$('.products .pro  .contents .content4').fadeIn();
+		content_left();
+		$('.products .pro  .contents .content4').show();
 		$('.products .pro  .contents .content4').siblings().hide();
-		$('.products .pro  .contents .content4').animate({left:0},1000);
+		$('.products .pro  .contents .content4').animate({left:0},600);
 	}
 	//content5
 	function content5_right(){
 		content_right();
-		$('.products .pro  .contents .content5').fadeIn();
+		$('.products .pro  .contents .content5').show();
 		$('.products .pro  .contents .content5').siblings().hide();
-		$('.products .pro  .contents .content5').animate({right:0},1000);
+		$('.products .pro  .contents .content5').animate({left:0},600);
 	}
 	function content5_left(){
-		content_right();
-		$('.products .pro  .contents .content5').fadeIn();
+		content_left();
+		$('.products .pro  .contents .content5').show();
 		$('.products .pro  .contents .content5').siblings().hide();
-		$('.products .pro  .contents .content5').animate({left:0},1000);
+		$('.products .pro  .contents .content5').animate({left:0},600);
 	}
 	//content6
 	function content6_right(){
 		content_right();
-		$('.products .pro  .contents .content6').fadeIn();
+		$('.products .pro  .contents .content6').show();
 		$('.products .pro  .contents .content6').siblings().hide();
-		$('.products .pro  .contents .content6').animate({right:0},1000);
+		$('.products .pro  .contents .content6').animate({left:0},600);
 	}
 	function content6_left(){
-		content_right();
-		$('.products .pro  .contents .content6').fadeIn().animate({left:0},1000);
+		content_left();
+		$('.products .pro  .contents .content6').show();
 		$('.products .pro  .contents .content6').siblings().hide();
-//		$('.products .pro  .contents .content6');
+		$('.products .pro  .contents .content6').animate({left:0},600);
 	}
 	
 	var num = 0;
+	$('.products .pro  .contents .content1').show();
+	$('.products .pro .pro-img-btn .pro-btn-left').hover(function(){
+		$(this).addClass('animated bounceIn');
+	},function(){
+		$(this).removeClass('animated bounceIn');
+	});
+	$('.products .pro .pro-img-btn .pro-btn-right').hover(function(){
+		$(this).addClass('animated bounceIn');
+	},function(){
+		$(this).removeClass('animated bounceIn');
+	});
 	$('.products .pro .pro-img-btn .pro-btn-left').on('click',function(){
 		num--;
 		if(num < 0){
 			num=6-1;
 		}
 		console.log(num);
-		left_change()
+		left_change();
 	});
 	$('.products .pro .pro-img-btn .pro-btn-right').on('click',function(){
 		num++;
@@ -213,6 +236,19 @@ $(function(){
 		console.log(num);
 		right_change();
 	});
+	$('.products .pro .pro-spans  span').on('click',function(){
+		ber=$(this).index();
+		console.log(ber);
+		if(ber>num){
+			ber=num;//重新赋值
+			right_change();
+			
+		}else if(ber<num){
+			ber=num;
+			left_change();
+		}
+		
+	})
 	function right_change(){
 		switch(num){
 			case 0:
@@ -262,3 +298,49 @@ $(function(){
 		$('.products .pro .pro-spans  span').eq(num).addClass('active');
 	}
 })
+
+
+//business
+$(function(){
+	var i=$('.business .business-ul').length;
+//	console.log(i);
+	var show = true;
+		hover_btn();
+		$('.business .business-ul .btn').on('click',function(){
+		$('.business .business-ul .art-3').slideToggle();
+		if(show)
+		{
+			$('.business .business-ul .btn').animate({
+				backgroundImage:'url(dist/images/business-btn.png)',
+				backgroundPositionY:67,
+				transition:'background-position-y 0.3s'
+			});
+			show = false;
+		}else{
+			hover_btn();
+			$('.business .business-ul .btn').animate({
+				backgroundImage:'url(dist/images/business-btn.png)',
+				backgroundPositionY:0,
+				transition:'background-position-y 0.3s'
+			});
+			show = true;
+		}
+	
+	});
+	//按钮弹得效果函数
+	function hover_btn(){
+		$('.business .business-ul .btn').hover(function(){
+				$(this).addClass('animated bounceIn');
+			},function(){
+				$(this).removeClass('animated bounceIn');
+		});
+	}
+	//图片弹
+	$('.business .business-ul .cimg .img').hover(function(){
+			$(this).addClass('animated bounceIn');
+		},function(){
+			$(this).removeClass('animated bounceIn');
+	});
+	
+	
+});
