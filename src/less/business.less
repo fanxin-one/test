@@ -93,12 +93,11 @@
 .team{
     width: 100%;
     background-color: #f1f2f6;
+    position: relative;
    .title{
-       
         width: 100%;
         text-align: center;
         padding: 60px 0;
-        
         img.business-title{
             width: 31px;
             height: 94px;
@@ -114,24 +113,202 @@
             letter-spacing: 3px;
         }
     }
+    .banner-po{
+        width: 1130px;
+        height: 30px;
+        position:absolute;
+        bottom:60px;
+        z-index: 2;
+        .banner-ul{
+            width:217px;
+            height:30px;
+            margin: 0 auto;
+            li{
+                float: left;
+                &.btn-left{
+                        width:29px;
+                        height: 29px;
+                        border-radius: 29px;
+                        border: none;
+                        cursor: pointer;
+                        background-image: url(../../dist/images/banner-btn-left.png);
+                        &:hover{
+                            background-image: url(../../dist/images/banner-btn-left-hover.png);
+                        }
+                }
+                &.center{
+                    width: 45px;
+                    height: 14px;
+                    padding: 7px 50px;
+                    background-image: url(../../dist/images/pro-content-line.png);
+                    background-repeat: no-repeat;
+                    background-position-y: center;
+                    .spans{
+                        width:45px;
+                        height: 14px;
+                        background: #e7eefe; 
+                        border-radius: 8px;
+                        border: 1px solid #eae6e3;
+                        span{
+                            width: 6px;
+                            height: 6px;
+                            display: block;
+                            background-color: #ded7d1;
+                            border-radius: 100%;
+                            float:left;
+                            cursor: pointer;
+                            margin-left:7px; 
+                            margin-top: 4px; 
+                            &:hover{
+                                background-color: blue;
+                            }
+                            &.active{
+                                background-color: blue;
+                            }
+                        }
+                    }
+                }
+                &.btn-right{
+                        width:29px;
+                        height: 29px;
+                        border-radius: 100%;
+                        border: none;
+                        cursor: pointer;
+                        outline: none;
+                        background-image: url(../../dist/images/banner-btn-right.png);
+                        &:hover{
+                            background-image: url(../../dist/images/banner-btn-right-hover.png);
+                        }
+                }
+            }
+            
+            
+        }
+    }
     .members{
-        width: 100%;
+        width: 300%;
         height: 255px;
-        background: bisque;
         padding-bottom: 175px;
+        position: relative;
+        overflow: hidden;
         .member{
+                display: none;
+                width: 1130px;
+                height:200px ;
+                position: absolute;
+                float: left;
             li{
                 width: 537px;
                 height: 200px;
                 margin-top:70px ;
                 border: 1px solid #e0e1e5;
-                background-color:gainsboro;
                 &.left{
                    float: left;
                 }
                 &.right{
                     float: right;
                 }
+                .name{
+                    width: 224px;
+                    height: 200px;
+                    float: left;
+                    text-align: center;
+                    .card{
+                        color:#5f4c82;
+                        width:224px;
+                        height:70px ;
+                        position: relative;
+                        padding-top: 120px;
+                        h3{
+                            font-size: 24px;
+                        }
+                        p{
+                            font-size: 18px;
+                            line-height: 24px;
+                        }
+                        .card-img{
+                            width: 156px;
+                            height: 156px;
+                            position: absolute;
+                            background-image: url(../../dist/images/team_img01.png);
+                            top:-60px ;
+                            left: 30px;
+                            cursor: pointer;
+                            &:hover{
+                                background-image: url(../../dist/images/team_amore.png);
+                                transition: background-image 0.5s ;
+                            }
+                        }
+                    }
+                }
+                .experience{
+                    float: left;
+                    width: calc(537px-224px-47px);
+                    text-align: center;
+                    
+                    p{  
+                        display: block;
+                        height: 50px;
+                        padding: 20px 8px 50px 8px ;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                    .input{
+                        width: 246px;
+                        height: 47px;
+                        border: 1px solid #e0e1e5;
+                        cursor: pointer;
+                        &:hover{
+                            border: 1px solid  #5f4c82;
+                        }
+                        span{
+                            display: block;
+                            width: 47px;
+                            height: 47px;
+                            float: left;
+                            background-color: #d9d9e1;
+                            background-image: url(../../dist/images/team_contact.png);
+                            background-repeat: no-repeat;
+                            background-size: 50%;
+                            background-position-x: 11px;
+                            background-position-y: 16px;
+                            overflow: hidden;
+                        }
+                        .input-input{
+                            border: none;
+                            width: 199px;
+                            height: 96%;
+                            outline: none;
+                            float: left;
+                            text-align: center;
+                            background-color: #e7e8ec;
+                            color: #5f4c82;
+                        }
+                    }
+                }
+                .contact{
+                        width: 47px;
+                        height: 202px;
+                        float: right;
+                        margin-top: -2px;
+                        background-color: #168bcb;
+                        background-image: url(../../dist/images/team_contact.png);
+                        background-repeat: no-repeat;
+                        background-size: 50%;
+                        overflow: hidden;
+                        background-position-y: -40px;
+                        background-position-x: 10px;
+                        span{
+                            display: block;
+                            width: 47px;
+                            height: 50px;
+                            cursor: pointer;
+                            &:hover,&:active{
+                                background-color: rgba(22, 139, 203, 0.34);
+                            }
+                            
+                        }
+                    }
                 
             }
         }

@@ -307,10 +307,10 @@ $(function(){
 	var show = true;
 		hover_btn();
 		$('.business .business-ul .btn').on('click',function(){
-		$('.business .business-ul .art-3').slideToggle();
+		$(this).parent().find($('.business .business-ul .art-3')).slideToggle();
 		if(show)
 		{
-			$('.business .business-ul .btn').animate({
+			$(this).animate({
 				backgroundImage:'url(dist/images/business-btn.png)',
 				backgroundPositionY:67,
 				transition:'background-position-y 0.3s'
@@ -344,3 +344,63 @@ $(function(){
 	
 	
 });
+
+
+//team 
+$(function(){
+	var index=0;
+	var leng=$('.team .members .member').length;
+	$('.team .members .member').eq(0).show();
+	$('.team .banner-po .banner-ul .btn-left').on('click',function(){
+		$('.team .members .member').hide().css('left',1130);
+		index--;
+		if(index<0){
+			index=leng-1;
+		}
+		
+		$('.team .members .member').eq(index).show().animate({
+				left:0
+			},1000);
+		$('.team .members ').push($('.team .members .member').first());
+		$('team .banner-po .banner-ul .center .spans span').removeClass('active');
+		$('team .banner-po .banner-ul .center .spans span').eq(index).addClass('active');
+	});
+	$('.team .banner-po .banner-ul .btn-right').on('click',function(){
+		$('.team .members .member').hide().css('left',-1130);
+		index++;
+		if(index>leng-1){
+			index=0;
+		}
+		console.log(index);
+		$('.team .members .member').eq(index).show().animate({
+			left:0
+		},1000);
+		$('.team .members ').push($('.team .members .member').last());
+		$('team .banner-po .banner-ul .center .spans span').removeClass('active');
+		$('team .banner-po .banner-ul .center .spans span').eq(index).addClass('active');
+	});
+	var img1=['dist/images/team_img02.png','dist/images/team_amore.png'];
+	var img2=['dist/images/team_img03.png','dist/images/team_amore.png']
+	$('.team .members .member .left .name .card .teamImg').hover(function(){
+		$(this).attr('src',img1[1])
+	},function(){
+		$(this).attr('src',img1[0])
+	})
+	$('.team .members .member .right .name .card .teamImg').hover(function(){
+		$(this).attr('src',img2[1])
+	},function(){
+		$(this).attr('src',img2[0])
+	})
+	$('.team .banner-po .banner-ul .btn-left').hover(function(){
+		$(this).addClass('animated bounceIn');
+	},function(){
+		$(this).removeClass('animated bounceIn');
+	})
+	$('.team .banner-po .banner-ul .btn-right').hover(function(){
+		$(this).addClass('animated bounceIn');
+	},function(){
+		$(this).removeClass('animated bounceIn');
+	})
+	
+});
+

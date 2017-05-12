@@ -1206,6 +1206,7 @@ template {
 .team {
   width: 100%;
   background-color: #f1f2f6;
+  position: relative;
 }
 .team .title {
   width: 100%;
@@ -1226,24 +1227,201 @@ template {
   font-size: 18px;
   letter-spacing: 3px;
 }
+.team .banner-po {
+  width: 1130px;
+  height: 30px;
+  position: absolute;
+  bottom: 60px;
+  z-index: 2;
+}
+.team .banner-po .banner-ul {
+  width: 217px;
+  height: 30px;
+  margin: 0 auto;
+}
+.team .banner-po .banner-ul li {
+  float: left;
+}
+.team .banner-po .banner-ul li.btn-left {
+  width: 29px;
+  height: 29px;
+  border-radius: 29px;
+  border: none;
+  cursor: pointer;
+  background-image: url(../../dist/images/banner-btn-left.png);
+}
+.team .banner-po .banner-ul li.btn-left:hover {
+  background-image: url(../../dist/images/banner-btn-left-hover.png);
+}
+.team .banner-po .banner-ul li.center {
+  width: 45px;
+  height: 14px;
+  padding: 7px 50px;
+  background-image: url(../../dist/images/pro-content-line.png);
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+.team .banner-po .banner-ul li.center .spans {
+  width: 45px;
+  height: 14px;
+  background: #e7eefe;
+  border-radius: 8px;
+  border: 1px solid #eae6e3;
+}
+.team .banner-po .banner-ul li.center .spans span {
+  width: 6px;
+  height: 6px;
+  display: block;
+  background-color: #ded7d1;
+  border-radius: 100%;
+  float: left;
+  cursor: pointer;
+  margin-left: 7px;
+  margin-top: 4px;
+}
+.team .banner-po .banner-ul li.center .spans span:hover {
+  background-color: blue;
+}
+.team .banner-po .banner-ul li.center .spans span.active {
+  background-color: blue;
+}
+.team .banner-po .banner-ul li.btn-right {
+  width: 29px;
+  height: 29px;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background-image: url(../../dist/images/banner-btn-right.png);
+}
+.team .banner-po .banner-ul li.btn-right:hover {
+  background-image: url(../../dist/images/banner-btn-right-hover.png);
+}
 .team .members {
-  width: 100%;
+  width: 300%;
   height: 255px;
-  background: bisque;
   padding-bottom: 175px;
+  position: relative;
+  overflow: hidden;
+}
+.team .members .member {
+  display: none;
+  width: 1130px;
+  height: 200px ;
+  position: absolute;
+  float: left;
 }
 .team .members .member li {
   width: 537px;
   height: 200px;
   margin-top: 70px ;
   border: 1px solid #e0e1e5;
-  background-color: gainsboro;
 }
 .team .members .member li.left {
   float: left;
 }
 .team .members .member li.right {
   float: right;
+}
+.team .members .member li .name {
+  width: 224px;
+  height: 200px;
+  float: left;
+  text-align: center;
+}
+.team .members .member li .name .card {
+  color: #5f4c82;
+  width: 224px;
+  height: 70px ;
+  position: relative;
+  padding-top: 120px;
+}
+.team .members .member li .name .card h3 {
+  font-size: 24px;
+}
+.team .members .member li .name .card p {
+  font-size: 18px;
+  line-height: 24px;
+}
+.team .members .member li .name .card .card-img {
+  width: 156px;
+  height: 156px;
+  position: absolute;
+  background-image: url(../../dist/images/team_img01.png);
+  top: -60px;
+  left: 30px;
+  cursor: pointer;
+}
+.team .members .member li .name .card .card-img:hover {
+  background-image: url(../../dist/images/team_amore.png);
+  transition: background-image 0.5s;
+}
+.team .members .member li .experience {
+  float: left;
+  width: calc(266px);
+  text-align: center;
+}
+.team .members .member li .experience p {
+  display: block;
+  height: 50px;
+  padding: 20px 8px 50px 8px ;
+  font-size: 16px;
+  line-height: 24px;
+}
+.team .members .member li .experience .input {
+  width: 246px;
+  height: 47px;
+  border: 1px solid #e0e1e5;
+  cursor: pointer;
+}
+.team .members .member li .experience .input:hover {
+  border: 1px solid  #5f4c82;
+}
+.team .members .member li .experience .input span {
+  display: block;
+  width: 47px;
+  height: 47px;
+  float: left;
+  background-color: #d9d9e1;
+  background-image: url(../../dist/images/team_contact.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position-x: 11px;
+  background-position-y: 16px;
+  overflow: hidden;
+}
+.team .members .member li .experience .input .input-input {
+  border: none;
+  width: 199px;
+  height: 96%;
+  outline: none;
+  float: left;
+  text-align: center;
+  background-color: #e7e8ec;
+  color: #5f4c82;
+}
+.team .members .member li .contact {
+  width: 47px;
+  height: 202px;
+  float: right;
+  margin-top: -2px;
+  background-color: #168bcb;
+  background-image: url(../../dist/images/team_contact.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  overflow: hidden;
+  background-position-y: -40px;
+  background-position-x: 10px;
+}
+.team .members .member li .contact span {
+  display: block;
+  width: 47px;
+  height: 50px;
+  cursor: pointer;
+}
+.team .members .member li .contact span:hover,
+.team .members .member li .contact span:active {
+  background-color: rgba(22, 139, 203, 0.34);
 }
 .introduction {
   width: 100%;
