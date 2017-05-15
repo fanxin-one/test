@@ -1,27 +1,20 @@
 .products {
   width: 100%;
-  height: 1000px;
+  height: 1080px;
   background-color: #f1f2f6;
 }
 .products .public {
   text-align: center;
 }
-.products .public .products-btn {
-  width: 58px;
-  height: 58px;
-  border-radius: 58px;
-  border: none;
-  margin-top: 44px;
-  margin-bottom: 48px;
-  background-image: url(../../dist/images/products-btn.png);
-  background-repeat: no-repeat;
-}
 .products .public h1 {
   font-weight: bolder;
+  margin: 0;
+  padding: 30px 0;
   color: #593d6a;
 }
 .products .public p {
   color: #593d6a;
+  margin: 0;
   font-family: KaiTi_GB2312;
   line-height: 25px;
 }
@@ -38,6 +31,80 @@
   float: left;
   cursor: pointer;
   margin-left: 10px;
+}
+.products .public .product-choice {
+  width: 100%;
+  height: 316px;
+  background: url(../../dist/images/product-line-text.png) no-repeat;
+  background-position-y: 55px;
+}
+.products .public .product-choice .product-choice-ul {
+  width: 100%;
+  height: 316px;
+  position: relative;
+}
+.products .public .product-choice .product-choice-ul .choice-li {
+  width: 185px;
+  height: 100px;
+  float: left;
+}
+.products .public .product-choice .product-choice-ul .choice-li .i2 {
+  font-style: normal;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+}
+.products .public .product-choice .product-choice-ul .choice-li .i2:hover {
+  padding-bottom: 20px;
+  transition: padding-top 0.2s;
+}
+.products .public .product-choice .product-choice-ul .choice-li .p2 {
+  font-size: 16px;
+  text-align: center;
+  padding-top: 75px;
+}
+.products .public .product-choice .product-choice-ul .choice-li .p2:hover {
+  padding-top: 85px;
+  transition: padding-top 0.2s;
+}
+.products .public .product-choice .product-choice-ul .nav2-product {
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  top: 48px;
+}
+.products .public .product-choice .product-choice-ul .nav2-product .point {
+  float: left;
+  padding: 0 85px;
+}
+.products .public .product-choice .product-choice-ul .nav2-product .point span {
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  border-radius: 100%;
+  background-image: url(../../dist/images/product-down.png);
+}
+.products .public .product-choice .product-choice-ul .nav2-product .point span:hover {
+  width: 26px ;
+  height: 26px;
+  background-size: 100%;
+  background-image: url(../../dist/images/product-active.png);
+  transition: background-image 0.2s;
+}
+.products .public .product-choice .product-choice-ul .nav2-product .point span.active {
+  width: 26px ;
+  height: 26px;
+  background-size: 100%;
+  background-image: url(../../dist/images/product-active.png);
+  transition: background-image 0.2s;
+}
+.products .public .product-choice .product-down {
+  width: 50px;
+  height: 50px;
+  background-image: url(../../dist/images/product-down.png);
+  background-position-x: 100px;
+  background-position-y: 100px;
 }
 .products .public .pro {
   width: 100%;

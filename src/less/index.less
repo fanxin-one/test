@@ -4,128 +4,434 @@
 @import 'var';
 @import 'products';
 @import 'business';
-
+@import 'footer';
 .introduction{
     width: 100%;
-    padding-bottom: 127px;
     background-size: 100%;
     background-image: url(../../dist/images/introduction-bg.jpg);
-    h1{
-        text-align: center;
-       margin: 0;
-       color: #fff;
-       padding: 60px 0 10px 0;
-    }
-    p{
-        text-align: center;
-        color: #fff;
-        padding-bottom: 10px;
-    }
-    .intro-spans{
-        width: 100%;
-        padding-bottom: 20px;
-        .spans{
-            width: 50px;
-            height: 10px;
-            margin: 0 auto;
-            padding-top: 4px;
-            span{
-                width: 6px;
-                height: 6px;
-                border-radius: 100%;
-                float: left;
-                margin-left: 10px;
-                background-color: darkgrey;
-                &:hover{
-                   background-color: #5c7da8; 
-                }
-                &.active{
-                    background-color: #5c7da8;  
-                }
+    .public{
+       padding-bottom: 126px;
+       h1{
+                text-align: center;
+               margin: 0;
+               color: #fff;
+               padding: 60px 0 10px 0;
             }
-        }
-    }
-    .intro{
-        width: 100%;
-        img{
-            display: block;
-            float: left;
-            padding-right: 25px;
-            padding-bottom:30px ;
-        }
-        .intro-article{
-            width: 725px;
-            float: right;
-            h3{
+            p{
+                text-align: center;
                 color: #fff;
-                padding-top: 10px;
-                text-align: left;
-               
+                padding-bottom: 10px;
             }
-            .pen-line{
-                padding-top: 40px;
-            }
-            .pen{
-               padding-left: 0;
-            }
-            .intro-art1{
+            .intro-spans{
                 width: 100%;
-                padding-top: 30px;
-                 .art{
-                      width: 600px;
-                      float: right;
-                      text-align: left;
-                      
-                      h3{
-                          color: #fff;
-                      }
-                      p{
-                          text-align: left;
-                          line-height: 25px;
-                      }
-                  }
+                padding-bottom: 20px;
+                .spans{
+                    width: 50px;
+                    height: 10px;
+                    margin: 0 auto;
+                    padding-top: 4px;
+                    span{
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 100%;
+                        float: left;
+                        margin-left: 10px;
+                        background-color: darkgrey;
+                        &:hover{
+                           background-color: #5c7da8; 
+                        }
+                        &.active{
+                            background-color: #5c7da8;  
+                        }
+                    }
+                }
             }
-            .pro-content-line{
-                width: 725px;
-                height: 2px;
-                background-image: url(../../dist/images/pro-content-line.png);
-                margin: 30px 0;
-                
-            }
-            i{
-                color: #FFFFFF;
-                font-style: normal;
-                line-height: 25px;
-            }
-            .quotes{
-                       width: 200px;
-                       height: 50px;
-                       padding-top: 20px;
-                       float: right;
-                       .quotes-left{
-                           width: 20px;
-                           height: 18px;
-                           cursor: pointer;
-                           background-image: url(../../dist/images/quote-left.png);
-                           &:hover{
-                              background-image: url(../../dist/images/quote-left-hover.png); 
-                           }
-                       }
-                       .quote-right{
-                           width: 20px;
-                           height: 18px;
-                           float: right;
-                           margin-top: 10px;
-                           cursor: pointer;
-                           background-image: url(../../dist/images/quote-right.png);
-                           &:hover{
+            .intro{
+                width: 100%;
+                img{
+                    display: block;
+                    float: left;
+                    padding-right: 25px;
+                    padding-bottom:30px ;
+                }
+                .intro-article{
+                    width: 725px;
+                    float: right;
+                    h3{
+                        color: #fff;
+                        padding-top: 10px;
+                        text-align: left;
+                       
+                    }
+                    .pen-line{
+                        padding-top: 40px;
+                    }
+                    .pen{
+                       padding-left: 0;
+                    }
+                    .intro-art1{
+                        width: 100%;
+                        padding-top: 30px;
+                         .art{
+                              width: 600px;
+                              float: right;
+                              text-align: left;
                               
-                               background-image: url(../../dist/images/quote-right-hover.png);
+                              h3{
+                                  color: #fff;
+                              }
+                              p{
+                                  text-align: left;
+                                  line-height: 25px;
+                              }
+                          }
+                    }
+                    .pro-content-line{
+                        width: 725px;
+                        height: 2px;
+                        background-image: url(../../dist/images/pro-content-line.png);
+                        margin: 30px 0;
+                        
+                    }
+                    i{
+                        color: #FFFFFF;
+                        font-style: normal;
+                        line-height: 25px;
+                    }
+                    .quotes{
+                               width: 200px;
+                               height: 50px;
+                               padding-top: 20px;
+                               float: right;
+                               .quotes-left{
+                                   width: 20px;
+                                   height: 18px;
+                                   cursor: pointer;
+                                   background-image: url(../../dist/images/quote-left.png);
+                                   &:hover{
+                                      background-image: url(../../dist/images/quote-left-hover.png); 
+                                   }
+                               }
+                               .quote-right{
+                                   width: 20px;
+                                   height: 18px;
+                                   float: right;
+                                   margin-top: 10px;
+                                   cursor: pointer;
+                                   background-image: url(../../dist/images/quote-right.png);
+                                   &:hover{
+                                      
+                                       background-image: url(../../dist/images/quote-right-hover.png);
+                                   }
+                               }
                            }
-                       }
-                   }
+                    
+                }
+            }
             
         }
+       
     }
     
+
+.partners{
+    width: 100%;
+    .top{
+      width: 1100px;
+      height: 35px;
+      margin: 0 auto;
+      img{
+          width: 100%;
+      }  
+    }
+    .bottom{
+       width: 1100px;
+       height: 35px;
+       margin: 0 auto;
+       img{
+          width: 100%;
+      }
+    }
+    .public{
+         padding-bottom: 124px;
+        .title{
+            padding: 80px 0 110px 0;
+            margin: 0 auto;
+            text-align: center;
+            h1{
+                margin-bottom: 0;
+                font-size: 60px;
+                line-height: 60px;
+                color: #311759;
+            }
+            p{
+                margin-top: 0;
+                font-size: 18px;
+                padding-bottom: 10px;
+                letter-spacing: 3px;
+            }
+        }
+        
+        .partners-ul,.users{
+                width: 555px;
+                height:430px;
+                float: left;
+                border-right:  1px solid #d3d3d3;
+                .title-ul{
+                    width: 100%;
+                    position: relative;
+                    h1{
+                       font-size: 60px;
+                       margin: 0;
+                       line-height: 60px;
+                       color: #311759;
+                       text-indent: 30px;
+                    }
+                    p{
+                        font-size: 18px;
+                        letter-spacing: 5px;
+                        text-indent: 50px;
+                        color: #311759;
+                    }
+                    .more{
+                        position: absolute;
+                        right: 0;
+                        top: 20px;
+                        width: 69px;
+                        height: 26px;
+                        cursor: pointer;
+                        border-radius: 20px;
+                        background: url(../../dist/images/more-bg.png);
+                        background-position-x: -69px;
+                        &:hover{
+                            background:url(../../dist/images/more-bg.png) ;
+                            transition: background 0.3s;
+                        }
+                    }
+                }
+                li{
+                    float: left;
+                    .div{
+                        width: 173px;
+                        height: 80px;
+                        padding-top: 20px;
+                        margin-top: 65px;
+                        img{
+                            padding:0  50px 0 40px; 
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }    
+         .users{
+               float: right;
+               border-right: none;
+         }   
+            
+        
+    }
 }
+.contacts{
+    width: 100%;
+    background-color: #f1f2f6;
+        .public{
+            padding-bottom: 80px;
+            .title{
+                padding: 60px 0 0 0;
+                margin: 0 auto;
+                text-align: center;
+                h1{
+                    margin-bottom: 0;
+                    font-size: 60px;
+                    line-height: 60px;
+                    color: #311759;
+                }
+                p{
+                    margin-top: 0;
+                    font-size: 18px;
+                    padding-bottom: 10px;
+                    letter-spacing: 3px;
+                }
+        }
+        .form{
+            width: 100%;
+            .inputs{
+                width: 100%;
+                height: 50px;
+                padding: 40px 0 30px 0;
+                .input-li{
+                    width: 346px;
+                    height: 45px;
+                    border: 1px solid #dedfe3;
+                    float: left;
+                    margin-right: 37px;
+                    &:hover{
+                            border: 1px solid #b5b5b5;
+                        }
+                    .input-bg{
+                        width: 45px;
+                        height: 45px;
+                        float: left;
+                        background-color: #e7e8ec;
+                        cursor: pointer;
+                        background: url(../../dist/images/contact-icons.png) no-repeat;
+                        background-repeat:no-repeat;
+                        &.name01{
+                            background-position-x: 10px;
+                            background-position-y: 15px;
+                            
+                        }
+                        
+                        &.email01{
+                            background-position-x: -30px;
+                            background-position-y: 15px;
+    
+                        }
+                        &.phone01{
+                            background-position-x: -80px;
+                            background-position-y: 15px;
+                        }
+                    }
+                    .name,.email,.phone{
+                        width: 282px;
+                        height: 43px;
+                        border: none;
+                        outline: none;
+                        font-size: 16px;
+                        padding-left: 18px;
+                        letter-spacing: 2px;
+                        color: #5f4c82;
+                    }
+                }
+            }
+        }
+        .texts{
+            width: 100%;
+            .text-textarea{
+                    width: 100%;
+                    .text-div{
+                        width: 730px;
+                        margin-right: 37px;
+                        border: 1px solid #dedfe3;
+                        float:left; 
+                        &:hover{
+                                border: 1px solid #b5b5b5;
+                            }
+                        .taxtarea-bg{
+                            width: 45px;
+                            height: 210px;
+                            background-color: #e7e8ec;
+                            float: left;
+                            cursor: pointer;
+                            background: url(../../dist/images/contact-icons.png)no-repeat;
+                            background-position-x: -130px;
+                            background-position-y: 15px;
+                        }
+                        textarea{
+                            float: left;
+                            width: 680px;
+                            height: 207px;
+                            font-size: 16px;
+                            letter-spacing: 2px;
+                            text-indent: 18px;
+                            line-height: 40px;
+                            border: none;
+                            outline: none;
+                        }
+                    }
+                    .text-te{
+                        width: 348px;
+                        height: 210px;
+                        font-size: 16px;
+                        line-height:40px;
+                        float: right;
+                        p{
+                            color: #7f7d83;
+                            span{
+                                color: red;
+                            }
+                        }
+                        h6{
+                           color: #605f64; 
+                           font-size: 18px;
+                           padding: 15px 0 30px 0;
+                        }
+                        .send{
+                            width: 346px;
+                            height: 45px;
+                            border: 1px solid #2999d6;
+                            background: #168bcd;
+                            .send-bg{
+                                width: 45px;
+                                float: left;
+                                height: 45px;
+                                background: url(../../dist/images/contact-icons.png) no-repeat;
+                                background-position-x: -180px;
+                                background-position-y: 15px;
+                            }
+                            button{
+                                float: right;
+                                border: none;
+                                width:301px; 
+                                height:45px;
+                                color: #FFFFFF;
+                                background: #168bcd;
+                                &:hover{
+                                    background-color: #0f6594;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+                
+            }
+            .ways{
+                width: 100%;
+                padding-top: 85px;
+                padding-bottom:90px;
+                .way{
+                   float: left; 
+                   width: 33.3%;
+                   .way_bg{
+                       width: 101px;
+                       height: 101px;
+                       float: left;
+                       img{
+                           width: 100%;
+                       }
+                   }
+                   .ways-text{
+                       float: left;
+                       width: 210px;
+                       height: 101px;
+                       margin-left: 25px;
+                       h2{
+                           width: 210px;
+                           height: 60px;
+                           color: #311759;
+                           line-height: 60px;
+                           background: url(../../dist/images/contact_kuaier_bg.png) no-repeat;
+                           background-position-y: 48px;
+                       }
+                       p{
+                           line-height: 32px;
+                           font-size: 16px;
+                       }
+                   }
+                }
+            }
+        }
+        
+//  .top{
+//        
+//        width: 1100px;
+//        height: 35px;
+//        margin: 0 auto;
+//        background: #;
+//        img{
+//            width: 100%;
+//        }  
+//  }
+}
+

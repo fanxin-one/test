@@ -352,6 +352,7 @@ $(function(){
 	var leng=$('.team .members .member').length;
 	$('.team .members .member').eq(0).show();
 	$('.team .banner-po .banner-ul .btn-left').on('click',function(){
+		clearInterval(auto);
 		$('.team .members .member').hide().css('left',1130);
 		index--;
 		if(index<0){
@@ -366,6 +367,7 @@ $(function(){
 		$('team .banner-po .banner-ul .center .spans span').eq(index).addClass('active');
 	});
 	$('.team .banner-po .banner-ul .btn-right').on('click',function(){
+		clearInterval(auto);
 		$('.team .members .member').hide().css('left',-1130);
 		index++;
 		if(index>leng-1){
@@ -379,6 +381,28 @@ $(function(){
 		$('team .banner-po .banner-ul .center .spans span').removeClass('active');
 		$('team .banner-po .banner-ul .center .spans span').eq(index).addClass('active');
 	});
+	
+		
+
+	var auto=setInterval(function(){
+		$('.team .members .member').hide().css('left',1130);
+		index--;
+		if(index<0){
+			index=leng-1;
+		}
+		
+		$('.team .members .member').eq(index).show().animate({
+				left:0
+			},1000);
+		$('.team .members ').push($('.team .members .member').first());
+		$('team .banner-po .banner-ul .center .spans span').removeClass('active');
+		$('team .banner-po .banner-ul .center .spans span').eq(index).addClass('active');
+	},2000);
+	
+	
+	
+	
+	
 	var img1=['dist/images/team_img02.png','dist/images/team_amore.png'];
 	var img2=['dist/images/team_img03.png','dist/images/team_amore.png']
 	$('.team .members .member .left .name .card .teamImg').hover(function(){
@@ -404,3 +428,17 @@ $(function(){
 	
 });
 
+//footer
+$(function(){
+	var music =$('.footer .public .music li div').length;
+	
+	$('.footer .public .music li div').on('click',function(){
+		$(this).attr('src','')
+	})
+	$('.footer .public .music li div').hover(function(){
+		$(this).addClass('animated bounceIn');
+	
+	},function(){
+		$(this).removeClass('animated bounceIn');
+	})
+})
