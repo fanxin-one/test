@@ -1,0 +1,338 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: KaiTi_GB2312;
+}
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.public {
+  width: 1120px;
+  margin: 0 auto;
+}
+.clear {
+  clear: both;
+}
+button,
+span {
+  cursor: pointer;
+  outline: none;
+}
+.scroll {
+  position: fixed;
+  top: 500px;
+  right: 20px;
+  width: 235px;
+  height: 169px;
+  z-index: 3;
+  display: none;
+}
+.scroll .scrollTop {
+  width: 50px;
+  height: 50px;
+  background: url(../../dist/images/scroll_top_bg.png);
+  margin: 0 auto;
+  margin-left: 160px;
+  cursor: pointer;
+}
+.scroll .scrollTop:hover {
+  background: url(../../dist/images/scroll_top_bg.png);
+  background-position-y: -50px;
+  transition: background 0.5s;
+}
+.scroll .scrollBottom {
+  margin-top: 25px;
+  width: 87px;
+  height: 87px;
+  background: url(../../dist/images/fixed_contactus.png);
+  background-position-x: -148px;
+  position: relative;
+  margin-left: 148px;
+  cursor: pointer;
+}
+.scroll .scrollBottom .fixed {
+  width: 148px;
+  height: 70px;
+  background: url(../../dist/images/fixed_contactus.png);
+  background-position-x: 0px;
+  background-position-y: 4px;
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  cursor: pointer;
+  display: none;
+}
+.scroll .scrollBottom:hover .fixed {
+  display: block;
+}
+.header {
+  width: 100%;
+  height: 120px;
+  background-image: url(../images/header_bg.jpg);
+}
+.header .logo {
+  display: block;
+  float: left;
+  padding-top: 20px;
+}
+.header .nav {
+  float: right;
+  text-align: center;
+}
+.header .nav .list {
+  float: left;
+  position: relative;
+  height: 71px;
+  padding: 46px 13px 0 13px;
+}
+.header .nav .list .list-li {
+  display: block;
+  float: left;
+  padding-right: 5px;
+  padding-top: 7px;
+}
+.header .nav .list a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.header .nav .list .arrow {
+  float: right;
+  width: 25px;
+  display: block;
+  height: 25px;
+  margin-left: 5px;
+  background-image: url(../../dist/images/nav_arrow.png);
+  background-repeat: no-repeat;
+}
+.header .nav .list .nav-now {
+  display: block;
+  padding-top: 7px;
+  padding-left: 45px;
+}
+.header .nav .list .lis {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  width: 180px;
+  margin-top: 40px;
+  font-size: 15px;
+  background-color: #332347;
+}
+.header .nav .list .lis li {
+  color: #FFF;
+  padding: 15px 0;
+}
+.header .nav .list .lis li:hover {
+  background-color: #3498db ;
+  padding-left: 10px;
+  transition: padding-left 0.3s;
+}
+.header .nav .list .lis li:hover:after {
+  content: url(../../dist/images/nav_li_bg.png);
+  float: right;
+  padding-left: 5px;
+  padding-right: 6px;
+}
+.header .nav .list:hover .arrow {
+  background-image: url(../../dist/images/nav_arrow_hover.png);
+}
+.map {
+  clear: both;
+  width: 100%;
+  height: 630px;
+}
+.map .top {
+  width: 1100px;
+  height: 35px;
+  margin: 0 auto;
+}
+.map .top img {
+  width: 100%;
+}
+.footer {
+  height: 350px;
+  width: 100%;
+  background: url(../../dist/images/music.jpg);
+}
+.footer .music {
+  width: 800px;
+  height: 57px;
+  padding: 110px 0 80px 0;
+  margin: 0 auto;
+}
+.footer .music li {
+  padding: 0 20px;
+  float: left;
+}
+.footer .music li div {
+  width: 57px;
+  height: 57px;
+  cursor: pointer;
+}
+.footer .music li div.music-bg01 {
+  background: url(../../dist/images/music_duo.png);
+}
+.footer .music li div.music-bg01:hover {
+  background: url(../../dist/images/music_duo.png);
+  background-position-y: -57px;
+}
+.footer .music li div.music-bg02 {
+  background: url(../../dist/images/music_lai.png);
+}
+.footer .music li div.music-bg02:hover {
+  background: url(../../dist/images/music_lai.png);
+  background-position-y: -57px;
+}
+.footer .music li div.music-bg03 {
+  background: url(../../dist/images/music_mi.png);
+}
+.footer .music li div.music-bg03:hover {
+  background: url(../../dist/images/music_mi.png);
+  background-position-y: -57px;
+}
+.footer .music li div.music-bg04 {
+  background: url(../../dist/images/music_fa.png);
+}
+.footer .music li div.music-bg04:hover {
+  background: url(../../dist/images/music_fa.png);
+  background-position-y: -57px;
+}
+.footer .music li div.music-bg05 {
+  background: url(../../dist/images/music_suo.png);
+}
+.footer .music li div.music-bg05:hover {
+  background: url(../../dist/images/music_suo.png);
+  background-position-y: -57px;
+}
+.footer .music li div.music-bg06 {
+  background: url(../../dist/images/music_la.png);
+}
+.footer .music li div.music-bg06:hover {
+  background: url(../../dist/images/music_la.png);
+  background-position-y: -57px;
+}
+.footer .music li div.music-bg07 {
+  background: url(../../dist/images/music_xi.png);
+}
+.footer .music li div.music-bg07:hover {
+  background: url(../../dist/images/music_xi.png);
+  background-position-y: -57px;
+}
+.footer .line {
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  padding-top: 20px;
+  border-top: 2px dashed #9890a2;
+}
+.contact-wrap {
+  width: 100%;
+  background: #f1f2f6;
+}
+.contact-wrap .public {
+  background: #fff;
+  color: #000;
+}
+.contact-wrap .public .wrap {
+  width: 780px;
+  padding: 80px 160px 140px 160px;
+}
+.contact-wrap .public .wrap .title {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 60px;
+}
+.contact-wrap .public .wrap .title h1 {
+  font-size: 60px;
+  line-height: 60px;
+  color: #311759;
+}
+.contact-wrap .public .wrap .title p {
+  color: #311759;
+  font-size: 18px;
+  line-height: 24px;
+}
+.contact-wrap .public .wrap .title_second {
+  width: 100%;
+  height: 95px;
+  position: relative;
+}
+.contact-wrap .public .wrap .title_second h2 {
+  font-size: 34px;
+  line-height: 34px;
+  color: #311759;
+  padding-bottom: 18px;
+}
+.contact-wrap .public .wrap .title_second .pen {
+  width: 61px;
+  height: 54px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../../dist/images/pen.png);
+}
+.contact-wrap .public .wrap .title_second .pen-line {
+  width: 93%;
+  height: 2px;
+  padding-top: 15px;
+  background: url(../../dist/images/product-line-text.png) no-repeat;
+}
+.contact-wrap .public .wrap .title_second p {
+  color: #6b6a6f;
+  font-size: 16px;
+}
+.contact-wrap .public .wrap .art_img11 {
+  display: block;
+  padding: 64px 0 32px 0;
+}
+.contact-wrap .public .wrap .article h6 {
+  font-size: 22px;
+  line-height: 60px;
+}
+.contact-wrap .public .wrap .article p {
+  font-size: 16px;
+  line-height: 22px;
+  padding: 15px 0;
+}
+.contact-wrap .public .wrap .iflike {
+  margin: 80px auto;
+  width: 73px;
+  height: 73px;
+  background: url(../../dist/images/article_iflike.png) no-repeat;
+  position: relative;
+  cursor: pointer;
+}
+.contact-wrap .public .wrap .iflike .like {
+  width: 135px;
+  height: 35px;
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+  background: url(../../dist/images/article_iflike_nomberbg.png);
+  position: absolute;
+  top: 20px;
+  right: 0;
+  display: none;
+}
+.contact-wrap .public .wrap .iflike:hover .like {
+  display: block;
+}

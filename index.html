@@ -7,17 +7,22 @@
     <title>卓新思创</title>
     <link rel="stylesheet" type="text/css" href="dist/css/index.css">
     <link rel="stylesheet" type="text/css" href="dist/css/animate.css"/>
+
     <script type="text/javascript" src="src/js/jquery.min.js"></script>
-    <script type="text/javascript" src="src/js/move.js">
-    	
-    </script>
+    <script type="text/javascript" src="src/js/move.js"></script>
     <script type="text/javascript" src="src/js/index.js"></script>
-    
+   
 </head>
 <body>
+	<div class="scroll">
+        	<div class="scrollTop"></div>
+        	<div class="scrollBottom">
+        		<div class="fixed"></div>
+        	</div>
+    </div>
     <header class="header">    
         <div class="public">
-            <img src="dist/images/logo.png" class="logo">
+            <img src="dist/images/aboutxiaoniao/logo.png" class="logo">
             <ul class="nav">
                 <li class="list">
                 	
@@ -26,7 +31,7 @@
                 </li>
                 <li class="list">
                 
-                    <a href="#">小鸟掌学</a>
+                    <a href="bird.html">小鸟掌学</a>
                     <span class="arrow"></span> <!--下箭头 arrow-->
                     <img src="dist/images/nav-now-bg.png" class="nav-now">
                 	<ul class="lis">
@@ -72,13 +77,12 @@
                 </li>
                 <li class="list">
                 	 
-                	<a href="#">联系我们</a>
+                	<a href="article.html">联系我们</a>
                 	<div class="clear"></div>
                 </li>
 				<div class="clear"></div>
             </ul>
-        </div
-
+        </div>
     </header>
     <section class="banner">
     	<img src="dist/images/banner01_bg.jpg" class="bannerImg"/>
@@ -842,14 +846,12 @@
 				<div class="clear"></div>
 			</ul>
 		</div>
-		<!--<div class="top">
-    		<img src="dist/images/hezuo_topbg.png"/>
-    	</div>-->
+		
 	</section>    
-    
-    <section class="API">
-    	地图
-
+    <section class="map" id="map" >
+    	<div class="top">
+    		<img src="dist/images/hezuo_topbg.png"/>
+    	</div>
     </section>
     <footer class="footer">
     	<div class="public">
@@ -880,9 +882,11 @@
 	    		<p><a href="#">蜀ICP备16002451号</a></p>
 	    	</div>
     	</div>
-    	
-    	
     </footer>
+    	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=p05vogurnf6QcV6yVOsIKrTQ2paDFXXh"></script>
+   		<script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+		<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />	
+   		<script type="text/javascript" src="src/js/map.js"></script>
     
 </body>
 </html>

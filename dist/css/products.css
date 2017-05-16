@@ -74,6 +74,9 @@
   position: absolute;
   top: 48px;
 }
+.products .public .product-choice .product-choice-ul .nav2-product:hover {
+  top: 45px;
+}
 .products .public .product-choice .product-choice-ul .nav2-product .point {
   float: left;
   padding: 0 85px;

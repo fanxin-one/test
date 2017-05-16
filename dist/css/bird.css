@@ -1,0 +1,425 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p,
+i {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  list-style: none;
+  font-family: "microsoft yahei";
+}
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.clear {
+  clear: both;
+}
+button,
+span {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.birdPublic {
+  width: 1000px;
+  margin: 0 auto;
+}
+.birdheader {
+  width: 100%;
+  height: 50px;
+  background: url(../../dist/images/aboutxiaoniao/beader_bg.jpg);
+  position: fixed;
+  top: 0;
+}
+.birdheader .birdNav {
+  width: 780px;
+  height: 50px;
+  padding-left: 245px;
+}
+.birdheader .birdNav .logo {
+  width: 132px;
+  height: 50px;
+  float: left;
+}
+.birdheader .birdNav .nav {
+  width: 648px;
+  height: 50px;
+  float: right;
+}
+.birdheader .birdNav .nav .nav-li {
+  float: left;
+  text-align: center;
+  padding: 10px 0;
+}
+.birdheader .birdNav .nav .nav-li a {
+  color: #aeabb4;
+  line-height: 30px;
+  padding: 0 20px;
+  position: relative;
+}
+.birdheader .birdNav .nav .nav-li a .nav-span {
+  width: 4px;
+  height: 4px;
+  display: block;
+  position: absolute;
+  background: url(../../dist/images/nav-now-bg.png);
+  border-radius: 100%;
+  top: 0px;
+  left: 0px;
+  display: none;
+}
+.birdheader .birdNav .nav .nav-li a:hover {
+  color: #fff;
+}
+.birdheader .birdNav .nav .nav-li a:hover .nav-span {
+  display: block;
+}
+.birdheader .birdNav .nav .nav-li.hove a {
+  color: #fff;
+}
+.birdheader .birdNav .nav .nav-li.hove a .nav-span {
+  display: block;
+  top: 30px;
+  left: 50px;
+}
+section {
+  width: 100%;
+  height: 800px;
+}
+section.fullpage2 {
+  background: #221236;
+  text-align: center;
+  color: #fff;
+}
+section.fullpage2 .welcome2 {
+  width: 400px;
+  height: 401px;
+  margin: 0 auto;
+}
+section.fullpage2 .school h1 {
+  font-size: 44px;
+  line-height: 48px;
+}
+section.fullpage2 .school p {
+  font-size: 16px;
+  letter-spacing: 4px;
+}
+section.fullpage2 .schoolQutes {
+  position: relative;
+}
+section.fullpage2 .schoolQutes .qutes1_left {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 250px;
+}
+section.fullpage2 .schoolQutes h1 {
+  font-size: 48px;
+}
+section.fullpage2 .schoolQutes .qotes1_right {
+  display: inline-block;
+  position: absolute;
+  top: 60px;
+  right: 250px;
+}
+section.fullpage2 p {
+  padding: 20px 0;
+}
+section.fullpage2 .btn01 {
+  width: 58px;
+  height: 58px;
+  background: url(../../dist/images/aboutxiaoniao/donext.png);
+  background-position-y: -58px;
+}
+section.fullpage2 .btn01:hover {
+  background: url(../../dist/images/aboutxiaoniao/donext.png);
+  background-position-y: 0px;
+  transition: background 0.3s;
+}
+section.fullpage3 {
+  position: relative;
+}
+section.fullpage3 .btn {
+  width: 90%;
+  height: 58px;
+  position: absolute;
+  top: 300px;
+  left: 50px;
+}
+section.fullpage3 .btn .btn02-left {
+  width: 58px;
+  height: 58px;
+  background: url(../../dist/images/aboutxiaoniao/goleft.png);
+  float: left;
+}
+section.fullpage3 .btn .btn02-left:hover {
+  background-position-x: -58px;
+  transition: background-position-x 0.3s;
+}
+section.fullpage3 .btn .btn02-right {
+  width: 58px;
+  height: 58px;
+  background: url(../../dist/images/aboutxiaoniao/goright.png);
+  background-position-x: -58px;
+  float: right;
+}
+section.fullpage3 .btn .btn02-right:hover {
+  background-position-x: 0 ;
+  transition: background-position-x 0.3s;
+}
+section.fullpage3 .birdPublic .overview {
+  width: 870px;
+  height: 715px;
+  background: bisque;
+  text-align: center;
+  position: relative;
+  margin-top: 50px ;
+  padding: 0 65px;
+}
+section.fullpage3 .birdPublic .overview.ov01 {
+  width: 870px;
+  height: 715px;
+  position: absolute;
+  left: 292px;
+  display: none;
+}
+section.fullpage3 .birdPublic .overview.ov01 h1 {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-size: 44px;
+  line-height: 48px;
+  color: #311759;
+}
+section.fullpage3 .birdPublic .overview.ov01 .ovqutes {
+  width: 635px ;
+  margin: 0 auto;
+  position: relative;
+}
+section.fullpage3 .birdPublic .overview.ov01 .ovqutes p {
+  font-size: 16px;
+  line-height: 30px;
+}
+section.fullpage3 .birdPublic .overview.ov01 .ovqutes .qutes1_left {
+  display: inline-block;
+  position: absolute;
+  top: -10px;
+  left: -16px;
+}
+section.fullpage3 .birdPublic .overview.ov01 .ovqutes .qotes1_right {
+  display: inline-block;
+  position: absolute;
+  top: 75px;
+  right: -24px;
+}
+section.fullpage3 .birdPublic .overview.ov01 .ov01_ul {
+  width: 905px;
+  height: 379px;
+  margin-left: -35px;
+  padding-top: 25px;
+}
+section.fullpage3 .birdPublic .overview.ov01 .ov01_ul li {
+  width: 25%;
+  height: 379px;
+  float: left;
+}
+section.fullpage3 .birdPublic .overview.ov01 .ov01_ul li .ov01_div {
+  padding-left: 35px;
+}
+section.fullpage3 .birdPublic .overview.ov01 .ov01_ul li .ov01_div .ou01_img {
+  width: 191px;
+  height: 370px;
+  border-radius: 18px;
+}
+section.fullpage3 .birdPublic .overview.ov01 .ov01_ul li .ov01_div .ou01_img img {
+  width: 100%;
+}
+section.fullpage3 .birdPublic .overview.ov02 {
+  width: 870px;
+  height: 715px;
+  position: absolute;
+  left: 292px;
+  display: none;
+}
+section.fullpage3 .birdPublic .overview.ov02 .bird-title {
+  display: block;
+  margin: 0 auto;
+  padding: 100px 0 10px 0;
+}
+section.fullpage3 .birdPublic .overview.ov02 .ov02-ul {
+  width: 660px;
+  background: blueviolet;
+  padding: 0 105px;
+}
+section.fullpage3 .birdPublic .overview.ov02 .ov02-ul li {
+  height: 99px;
+  padding-top: 50px;
+}
+section.fullpage3 .birdPublic .overview.ov02 .ov02-ul li .ov02_img {
+  width: 98px;
+  height: 99px;
+  float: left;
+}
+section.fullpage3 .birdPublic .overview.ov02 .ov02-ul li .ov02_art {
+  float: left;
+  margin-left: 65px ;
+  text-align: left;
+}
+section.fullpage3 .birdPublic .overview.ov02 .ov02-ul li .ov02_art h3 {
+  margin-top: 12px;
+  font-size: 24px ;
+  font-weight: normal;
+}
+section.fullpage3 .birdPublic .overview.ov02 .ov02-ul li .ov02_art p {
+  font-size: 18px;
+  font-weight: normal;
+}
+section.fullpage3 .birdPublic .overview.ov03 {
+  width: 870px;
+  height: 715px;
+  position: absolute;
+  left: 292px;
+  display: none;
+}
+section.fullpage3 .birdPublic .overview.ov03 .bird-title {
+  display: block;
+  margin: 0 auto;
+  padding: 100px 0 55px 0;
+}
+section.fullpage3 .birdPublic .overview.ov03 .schoolQutes {
+  position: relative;
+}
+section.fullpage3 .birdPublic .overview.ov03 .schoolQutes .qutes1_left {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 200px;
+}
+section.fullpage3 .birdPublic .overview.ov03 .schoolQutes h1 {
+  font-size: 48px;
+  font-weight: normal;
+}
+section.fullpage3 .birdPublic .overview.ov03 .schoolQutes .qotes1_right {
+  display: inline-block;
+  position: absolute;
+  top: 60px;
+  right: 200px;
+}
+section.fullpage3 .birdPublic .overview.ov03 p {
+  display: block;
+  text-align: left;
+  width: 730px;
+  padding: 40px 70px;
+  text-indent: 30px;
+}
+section.fullpage3 .birdPublic .overview.ov03 .scrollon {
+  display: block;
+  margin: 20px auto;
+}
+section.fullpage4 {
+  background: #221236;
+  text-align: center;
+  color: #fff;
+}
+section.fullpage4 .value {
+  width: 980px;
+  height: 800px;
+  padding: 0 16px;
+}
+section.fullpage4 .value h1 {
+  font-size: 48px;
+  text-align: center;
+  padding: 100px 0;
+}
+section.fullpage4 .value .value-ul {
+  width: 860px;
+  height: 370px;
+  padding: 5px 60px;
+  position: relative;
+  background: darkgoldenrod;
+}
+section.fullpage4 .value .value-ul li {
+  width: 50%;
+  height: 114px;
+  float: left;
+}
+section.fullpage4 .value .value-ul li .value_div {
+  padding: 20px 23px;
+}
+section.fullpage4 .value .value-ul li .value_div .value_matters {
+  width: 373px;
+  height: 74px;
+}
+section.fullpage4 .value .value-ul li .value_div .value_matters .value_img {
+  width: 74px;
+  height: 74px;
+  float: left;
+  background: url(../../dist/images/aboutxiaoniao/value_quanquan.png);
+  text-align: center;
+}
+section.fullpage4 .value .value-ul li .value_div .value_matters .value_img p {
+  padding-top: 23px;
+}
+section.fullpage4 .value .value-ul li .value_div .value_matters .value_matter {
+  float: right;
+  width: 280px;
+  padding-top: 15px;
+  text-align: left;
+}
+section.fullpage4 .value .value-ul .value-top {
+  width: 980px;
+  height: 20px;
+  position: absolute;
+  top: -5px;
+  left: 1px;
+}
+section.fullpage4 .value .value-ul .value-top .value-top-left {
+  width: 20px;
+  height: 20px;
+  float: left;
+  background: url(../../dist/images/aboutxiaoniao/value_border_11.png);
+}
+section.fullpage4 .value .value-ul .value-top .value-top-left:hover {
+  background: url(../../dist/images/aboutxiaoniao/value_border_12.png);
+}
+section.fullpage4 .value .value-ul .value-top .value-top-right {
+  width: 20px;
+  height: 20px;
+  float: right;
+  background: url(../../dist/images/aboutxiaoniao/value_border_21.png);
+}
+section.fullpage4 .value .value-ul .value-top .value-top-right:hover {
+  background: url(../../dist/images/aboutxiaoniao/value_border_22.png);
+}
+section.fullpage4 .value .value-ul .value-bottom {
+  width: 980px;
+  height: 20px;
+  position: absolute;
+  bottom: -5px;
+  left: 1px;
+}
+section.fullpage4 .value .value-ul .value-bottom .value-bottom-left {
+  width: 20px;
+  height: 20px;
+  float: left;
+  background: url(../../dist/images/aboutxiaoniao/value_border_31.png);
+}
+section.fullpage4 .value .value-ul .value-bottom .value-bottom-left:hover {
+  background: url(../../dist/images/aboutxiaoniao/value_border_32.png);
+}
+section.fullpage4 .value .value-ul .value-bottom .value-bottom-right {
+  width: 20px;
+  height: 20px;
+  float: right;
+  background: url(../../dist/images/aboutxiaoniao/value_border_41.png);
+}

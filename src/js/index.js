@@ -6,6 +6,30 @@ $(function(){
 		$(this).children('.lis').slideUp(100);
 	})
 });
+//scroll
+$(function(){
+	$('.scroll .scrollBottom').hover(function(){
+		$(this).addClass('animated bounceIn');
+		$('.scroll .scrollBottom .fixed' ).css(
+			'left','-150px');
+	},function(){
+		$(this).removeClass('animated bounceIn');
+	});
+	
+	$(document).scroll(function(){
+		var top=$(document).scrollTop();
+//		console.log(top);
+		if(top>600){
+			$('.scroll').css('display','block')
+		}
+		else if(top<600){
+			$('.scroll').css('display','none')
+		}
+	})
+	$('.scroll .scrollTop').on('click',function(){
+		$(document.body).animate({scrollTop:'0'},500);//document，没有往上移的动画，只有body才有
+	})
+});
 
 
 
