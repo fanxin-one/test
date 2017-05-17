@@ -49,7 +49,7 @@ span {
   height: 50px;
   background: url(../../dist/images/scroll_top_bg.png);
   margin: 0 auto;
-  margin-left: 160px;
+  margin-left: 168px;
   cursor: pointer;
 }
 .scroll .scrollTop:hover {
@@ -159,18 +159,20 @@ span {
   width: 100%;
   height: 630px;
 }
-.map .top {
-  width: 1100px;
-  height: 35px;
-  margin: 0 auto;
-}
-.map .top img {
-  width: 100%;
-}
 .footer {
-  height: 350px;
+  height: 383px;
   width: 100%;
-  background: url(../../dist/images/music.jpg);
+  background: url(../../dist/images/music.jpg) no-repeat;
+  background-position-x: 50%;
+  position: relative;
+}
+.footer .map-bottom {
+  position: absolute;
+  width: 100%;
+  height: 33px;
+  background: url(../../dist/images/map_bottomimg.png);
+  background-position-x: 50%;
+  top: -33px;
 }
 .footer .music {
   width: 800px;
@@ -284,11 +286,15 @@ span {
 }
 .contact-wrap .public .wrap .title_second .pen {
   width: 61px;
-  height: 54px;
+  height: 58px;
   position: absolute;
   top: 0;
   right: 0;
-  background: url(../../dist/images/pen.png);
+  background: url(../../dist/images/pen_article.png);
+}
+.contact-wrap .public .wrap .title_second .pen:hover {
+  background: url(../../dist/images/pen_article.png);
+  background-position-x: -61px;
 }
 .contact-wrap .public .wrap .title_second .pen-line {
   width: 93%;
@@ -335,4 +341,22 @@ span {
 }
 .contact-wrap .public .wrap .iflike:hover .like {
   display: block;
+}
+.contact-wrap .public .wrap .empress {
+  width: 255px;
+  height: 82px;
+  background-color: #f1f2f6;
+  color: #311859;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 24px;
+  margin: 0 34%;
+}
+.footer {
+  width: 100%;
+  height: 350px;
+  background: url(../../dist/images/footer-bg.png);
+  background-position-x: 50%;
 }

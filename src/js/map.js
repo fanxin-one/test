@@ -1,10 +1,10 @@
 var map = new BMap.Map('map');
  var poi = new BMap.Point(106.528957,29.549618);//坐标拾取
     map.centerAndZoom(poi, 40);//放大倍数
-    map.enableScrollWheelZoom();
+//  map.enableScrollWheelZoom();放大缩小函数
     map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
 	map.setCurrentCity("重庆");          // 设置地图显示的城市 此项是必须设置的
-	map.enableScrollWheelZoom(true);
+//	map.enableScrollWheelZoom(true);
      var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
                     '<img src="../img/baidu.jpg" alt="" style="float:right;zoom:1;overflow:hidden;width:100px;height:100px;margin-left:3px;"/>' +
                     '地址：重庆市渝中区大坪街道大坪医院<br/>电话：(010)59928888<br/>简介：大坪医院位于重庆1号线大坪轻轨站5号出口旁' +

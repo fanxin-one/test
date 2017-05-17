@@ -37,11 +37,15 @@
                 }
                 .pen{
                     width: 61px;
-                    height: 54px;
+                    height: 58px;
                     position: absolute;
                     top: 0;
                     right: 0;
-                    background: url(../../dist/images/pen.png);
+                    background: url(../../dist/images/pen_article.png);
+                    &:hover{
+                        background: url(../../dist/images/pen_article.png);
+                        background-position-x: -61px;
+                    }
                 }
                 .pen-line{
                     width: 93%;
@@ -94,7 +98,24 @@
                 }
                 
             }
+            .empress{
+                width: 255px;
+                height: 82px;
+                background-color:#f1f2f6;
+                color: #311859;
+                border-radius: 10px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                font-size: 24px;
+                margin: 0 34%;
+            }
         }
-        
     }
+}
+.footer{
+    width: 100%;
+    height: 350px;
+    background: url(../../dist/images/footer-bg.png);
+    background-position-x: 50%;
 }

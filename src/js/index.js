@@ -337,7 +337,7 @@ $(function(){
 			$(this).animate({
 				backgroundImage:'url(dist/images/business-btn.png)',
 				backgroundPositionY:67,
-				transition:'background-position-y 0.3s'
+				transition:'backgroundPositionY 0.3s'
 			});
 			show = false;
 		}else{
@@ -345,7 +345,7 @@ $(function(){
 			$('.business .business-ul .btn').animate({
 				backgroundImage:'url(dist/images/business-btn.png)',
 				backgroundPositionY:0,
-				transition:'background-position-y 0.3s'
+				transition:'backgroundPositionY 0.3s'
 			});
 			show = true;
 		}

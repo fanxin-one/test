@@ -1,0 +1,800 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: KaiTi_GB2312;
+}
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.public {
+  width: 1120px;
+  margin: 0 auto;
+}
+.clear {
+  clear: both;
+}
+button,
+span {
+  cursor: pointer;
+  outline: none;
+}
+.scroll {
+  position: fixed;
+  top: 500px;
+  right: 20px;
+  width: 235px;
+  height: 169px;
+  z-index: 3;
+  display: none;
+}
+.scroll .scrollTop {
+  width: 50px;
+  height: 50px;
+  background: url(../../dist/images/scroll_top_bg.png);
+  margin: 0 auto;
+  margin-left: 168px;
+  cursor: pointer;
+}
+.scroll .scrollTop:hover {
+  background: url(../../dist/images/scroll_top_bg.png);
+  background-position-y: -50px;
+  transition: background 0.5s;
+}
+.scroll .scrollBottom {
+  margin-top: 25px;
+  width: 87px;
+  height: 87px;
+  background: url(../../dist/images/fixed_contactus.png);
+  background-position-x: -148px;
+  position: relative;
+  margin-left: 148px;
+  cursor: pointer;
+}
+.scroll .scrollBottom .fixed {
+  width: 148px;
+  height: 70px;
+  background: url(../../dist/images/fixed_contactus.png);
+  background-position-x: 0px;
+  background-position-y: 4px;
+  overflow: hidden;
+  position: absolute;
+  left: 0px;
+  cursor: pointer;
+  display: none;
+}
+.scroll .scrollBottom:hover .fixed {
+  display: block;
+}
+.header {
+  width: 100%;
+  height: 120px;
+  background-image: url(../images/header_bg.jpg);
+}
+.header .logo {
+  display: block;
+  float: left;
+  padding-top: 20px;
+}
+.header .nav {
+  float: right;
+  text-align: center;
+}
+.header .nav .list {
+  float: left;
+  position: relative;
+  height: 71px;
+  padding: 46px 13px 0 13px;
+}
+.header .nav .list .list-li {
+  display: block;
+  float: left;
+  padding-right: 5px;
+  padding-top: 7px;
+}
+.header .nav .list a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.header .nav .list .arrow {
+  float: right;
+  width: 25px;
+  display: block;
+  height: 25px;
+  margin-left: 5px;
+  background-image: url(../../dist/images/nav_arrow.png);
+  background-repeat: no-repeat;
+}
+.header .nav .list .nav-now {
+  display: block;
+  padding-top: 7px;
+  padding-left: 45px;
+}
+.header .nav .list .lis {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  width: 180px;
+  margin-top: 40px;
+  font-size: 15px;
+  background-color: #332347;
+}
+.header .nav .list .lis li {
+  color: #FFF;
+  padding: 15px 0;
+}
+.header .nav .list .lis li:hover {
+  background-color: #3498db ;
+  padding-left: 10px;
+  transition: padding-left 0.3s;
+}
+.header .nav .list .lis li:hover:after {
+  content: url(../../dist/images/nav_li_bg.png);
+  float: right;
+  padding-left: 5px;
+  padding-right: 6px;
+}
+.header .nav .list:hover .arrow {
+  background-image: url(../../dist/images/nav_arrow_hover.png);
+}
+.map {
+  clear: both;
+  width: 100%;
+  height: 630px;
+}
+.footer {
+  height: 383px;
+  width: 100%;
+  background: url(../../dist/images/music.jpg) no-repeat;
+  background-position-x: 50%;
+  position: relative;
+}
+.footer .map-bottom {
+  position: absolute;
+  width: 100%;
+  height: 33px;
+  background: url(../../dist/images/map_bottomimg.png);
+  background-position-x: 50%;
+  top: -33px;
+}
+.footer .music {
+  width: 800px;
+  height: 57px;
+  padding: 110px 0 80px 0;
+  margin: 0 auto;
+}
+.footer .music li {
+  padding: 0 20px;
+  float: left;
+}
+.footer .music li div {
+  width: 57px;
+  height: 57px;
+  cursor: pointer;
+}
+.footer .music li div.music-bg01 {
+  background: url(../../dist/images/music_duo.png);
+}
+.footer .music li div.music-bg01:hover {
+  background: url(../../dist/images/music_duo.png);
+  background-position-y: -57px;
+}
+.footer .music li div.music-bg02 {
+  background: url(../../dist/images/music_lai.png);
+}
+.footer .music li div.music-bg02:hover {
+  background: url(../../dist/images/music_lai.png);
+  background-position-y: -57px;
+}
+.footer .music li div.music-bg03 {
+  background: url(../../dist/images/music_mi.png);
+}
+.footer .music li div.music-bg03:hover {
+  background: url(../../dist/images/music_mi.png);
+  background-position-y: -57px;
+}
+.footer .music li div.music-bg04 {
+  background: url(../../dist/images/music_fa.png);
+}
+.footer .music li div.music-bg04:hover {
+  background: url(../../dist/images/music_fa.png);
+  background-position-y: -57px;
+}
+.footer .music li div.music-bg05 {
+  background: url(../../dist/images/music_suo.png);
+}
+.footer .music li div.music-bg05:hover {
+  background: url(../../dist/images/music_suo.png);
+  background-position-y: -57px;
+}
+.footer .music li div.music-bg06 {
+  background: url(../../dist/images/music_la.png);
+}
+.footer .music li div.music-bg06:hover {
+  background: url(../../dist/images/music_la.png);
+  background-position-y: -57px;
+}
+.footer .music li div.music-bg07 {
+  background: url(../../dist/images/music_xi.png);
+}
+.footer .music li div.music-bg07:hover {
+  background: url(../../dist/images/music_xi.png);
+  background-position-y: -57px;
+}
+.footer .line {
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  padding-top: 20px;
+  border-top: 2px dashed #9890a2;
+}
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0;
+}
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block;
+}
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+p,
+h1,
+h2,
+h3,
+h6,
+i {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+}
+.state {
+  width: 100%;
+  background: #f1f2f6;
+}
+.state .public .master {
+  width: 1100px;
+  padding: 0 10px;
+}
+.state .public .master .title {
+  width: 100%;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+.state .public .master .title h1 {
+  font-size: 60px;
+  line-height: 60px;
+  color: #311759;
+}
+.state .public .master .title p {
+  color: #311759;
+  font-size: 18px;
+  line-height: 24px;
+}
+.state .public .master .list-title {
+  width: 100%;
+  height: 95px;
+  position: relative;
+}
+.state .public .master .list-title h2 {
+  font-size: 34px;
+  line-height: 34px;
+  color: #311759;
+  padding-bottom: 18px;
+}
+.state .public .master .list-title .pen {
+  width: 61px;
+  height: 58px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../../dist/images/pen_list.png);
+}
+.state .public .master .list-title .pen:hover {
+  background: url(../../dist/images/pen_list.png);
+  background-position-x: -61px;
+}
+.state .public .master .list-title .pen-line {
+  width: 93%;
+  height: 2px;
+  padding-top: 15px;
+  background: url(../../dist/images/product-line-text.png) no-repeat;
+}
+.state .public .master .state-ul {
+  width: 1130px;
+  margin-left: -30px;
+}
+.state .public .master .state-ul li {
+  width: 50%;
+  height: 250px;
+  float: left;
+}
+.state .public .master .state-ul li .state-div {
+  margin-left: 30px;
+  background: #fff;
+  border: 1px solid #FFFFFF;
+  cursor: pointer;
+  position: relative;
+}
+.state .public .master .state-ul li .state-div:hover {
+  border: 1px solid #000000;
+}
+.state .public .master .state-ul li .state-div .state-span {
+  border-top: 10px solid #fff;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
+.state .public .master .state-ul li .state-div:hover .state-span {
+  left: 60px;
+  transition: left 0.3s;
+}
+.state .public .master .state-ul li .state-div .state-master {
+  width: 496px;
+  height: 170px;
+  margin: 20px 20px;
+}
+.state .public .master .state-ul li .state-div .state-master .state-img {
+  width: 260px;
+  height: 170px;
+  float: left;
+}
+.state .public .master .state-ul li .state-div .state-master .state-img img {
+  width: 100%;
+  display: block;
+}
+.state .public .master .state-ul li .state-div .state-master .state-art {
+  width: 225px;
+  margin-left: 10px;
+  float: right;
+}
+.state .public .master .state-ul li .state-div .state-master .state-art h6 {
+  padding-top: 15px;
+  font-size: 20px;
+  line-height: 28px;
+  font-style: normal;
+}
+.state .public .master .state-ul li .state-div .state-master .state-art i {
+  font-size: 14px;
+  color: #8d8c90;
+  line-height: 24px;
+}
+.state .public .master .state-ul li .state-div .state-master .state-art p {
+  font-size: 14px ;
+  line-height: 20px;
+}
+.state .public .master .go {
+  width: 107px;
+  height: 400px;
+  margin: 0px auto;
+}
+.state .public .master .go .gomore {
+  width: 107px;
+  height: 175px;
+}
+.state .public .master .go .gomore img {
+  width: 100%;
+  display: block;
+}
+.state .public .master .go .more {
+  width: 58px;
+  height: 58px;
+  margin: 24.5px;
+  background: url(../../dist/images/aboutxiaoniao/donext.png);
+  background-position-y: -58px;
+  border: none;
+  outline: none;
+}
+.state .public .master .go .more:hover {
+  background: url(../../dist/images/aboutxiaoniao/donext.png);
+  background-position-y: 0px;
+  transition: background-position-y 0.3s;
+}
+.state .top {
+  width: 100%;
+  height: 33px;
+  background: url(../../dist/images/map_bottomimg.png);
+  background-position-x: 50%;
+}

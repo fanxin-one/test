@@ -1,3 +1,394 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0;
+}
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block;
+}
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
 body,
 h1,
 h2,
@@ -13,7 +404,12 @@ i {
   padding: 0;
   font-style: normal;
   list-style: none;
-  font-family: "microsoft yahei";
+  font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
 }
 a,
 a:link,
@@ -41,16 +437,18 @@ span {
   background: url(../../dist/images/aboutxiaoniao/beader_bg.jpg);
   position: fixed;
   top: 0;
+  z-index: 998;
 }
 .birdheader .birdNav {
-  width: 780px;
+  width: 790px;
   height: 50px;
   padding-left: 245px;
 }
 .birdheader .birdNav .logo {
-  width: 132px;
-  height: 50px;
+  width: 134px;
+  height: 41px;
   float: left;
+  padding-top: 7px;
 }
 .birdheader .birdNav .nav {
   width: 648px;
@@ -85,341 +483,465 @@ span {
 .birdheader .birdNav .nav .nav-li a:hover .nav-span {
   display: block;
 }
-.birdheader .birdNav .nav .nav-li.hove a {
+.birdheader .birdNav .nav .nav-li.active a {
   color: #fff;
 }
-.birdheader .birdNav .nav .nav-li.hove a .nav-span {
-  display: block;
-  top: 30px;
-  left: 50px;
-}
-section {
+.section {
   width: 100%;
-  height: 800px;
+  height: 100%;
 }
-section.fullpage2 {
+.section.fullpage2 {
+  width: 100%;
+  height: 100%;
   background: #221236;
   text-align: center;
   color: #fff;
 }
-section.fullpage2 .welcome2 {
-  width: 400px;
-  height: 401px;
+.section.fullpage2 .welcome2 {
+  width: 224px;
+  height: 200px;
+  display: block;
   margin: 0 auto;
+  padding-top: 115px;
+  padding-bottom: 30px;
 }
-section.fullpage2 .school h1 {
+.section.fullpage2 .school h1 {
   font-size: 44px;
   line-height: 48px;
 }
-section.fullpage2 .school p {
+.section.fullpage2 .school p {
   font-size: 16px;
   letter-spacing: 4px;
 }
-section.fullpage2 .schoolQutes {
+.section.fullpage2 .schoolQutes {
   position: relative;
 }
-section.fullpage2 .schoolQutes .qutes1_left {
+.section.fullpage2 .schoolQutes .qutes1_left {
   display: inline-block;
   position: absolute;
   top: 0px;
   left: 250px;
 }
-section.fullpage2 .schoolQutes h1 {
+.section.fullpage2 .schoolQutes h1 {
   font-size: 48px;
 }
-section.fullpage2 .schoolQutes .qotes1_right {
+.section.fullpage2 .schoolQutes .qotes1_right {
   display: inline-block;
   position: absolute;
   top: 60px;
   right: 250px;
 }
-section.fullpage2 p {
+.section.fullpage2 p {
   padding: 20px 0;
 }
-section.fullpage2 .btn01 {
+.section.fullpage2 .btn01 {
   width: 58px;
   height: 58px;
   background: url(../../dist/images/aboutxiaoniao/donext.png);
   background-position-y: -58px;
 }
-section.fullpage2 .btn01:hover {
+.section.fullpage2 .btn01:hover {
   background: url(../../dist/images/aboutxiaoniao/donext.png);
   background-position-y: 0px;
   transition: background 0.3s;
 }
-section.fullpage3 {
-  position: relative;
+.section.fullpage3 {
+  width: 100%;
+  height: 100%;
 }
-section.fullpage3 .btn {
+.section.fullpage3 .btn {
   width: 90%;
   height: 58px;
   position: absolute;
   top: 300px;
   left: 50px;
 }
-section.fullpage3 .btn .btn02-left {
+.section.fullpage3 .btn .btn02-left {
   width: 58px;
   height: 58px;
   background: url(../../dist/images/aboutxiaoniao/goleft.png);
   float: left;
 }
-section.fullpage3 .btn .btn02-left:hover {
+.section.fullpage3 .btn .btn02-left:hover {
   background-position-x: -58px;
   transition: background-position-x 0.3s;
 }
-section.fullpage3 .btn .btn02-right {
+.section.fullpage3 .btn .btn02-right {
   width: 58px;
   height: 58px;
   background: url(../../dist/images/aboutxiaoniao/goright.png);
   background-position-x: -58px;
   float: right;
 }
-section.fullpage3 .btn .btn02-right:hover {
+.section.fullpage3 .btn .btn02-right:hover {
   background-position-x: 0 ;
   transition: background-position-x 0.3s;
 }
-section.fullpage3 .birdPublic .overview {
+.section.fullpage3 .birdPublic {
+  height: 100%;
+  width: 100%;
+}
+.section.fullpage3 .birdPublic .overview {
   width: 870px;
-  height: 715px;
-  background: bisque;
+  margin: 0 auto;
+  height: 100%;
   text-align: center;
-  position: relative;
-  margin-top: 50px ;
   padding: 0 65px;
 }
-section.fullpage3 .birdPublic .overview.ov01 {
+.section.fullpage3 .birdPublic .overview.ov01 {
   width: 870px;
   height: 715px;
-  position: absolute;
-  left: 292px;
-  display: none;
 }
-section.fullpage3 .birdPublic .overview.ov01 h1 {
+.section.fullpage3 .birdPublic .overview.ov01 h1 {
   padding-top: 50px;
   padding-bottom: 30px;
   font-size: 44px;
   line-height: 48px;
   color: #311759;
 }
-section.fullpage3 .birdPublic .overview.ov01 .ovqutes {
-  width: 635px ;
+.section.fullpage3 .birdPublic .overview.ov01 .ovqutes {
+  width: 635px;
   margin: 0 auto;
   position: relative;
 }
-section.fullpage3 .birdPublic .overview.ov01 .ovqutes p {
+.section.fullpage3 .birdPublic .overview.ov01 .ovqutes p {
   font-size: 16px;
   line-height: 30px;
 }
-section.fullpage3 .birdPublic .overview.ov01 .ovqutes .qutes1_left {
+.section.fullpage3 .birdPublic .overview.ov01 .ovqutes .qutes1_left {
   display: inline-block;
   position: absolute;
   top: -10px;
   left: -16px;
 }
-section.fullpage3 .birdPublic .overview.ov01 .ovqutes .qotes1_right {
+.section.fullpage3 .birdPublic .overview.ov01 .ovqutes .qotes1_right {
   display: inline-block;
   position: absolute;
   top: 75px;
   right: -24px;
 }
-section.fullpage3 .birdPublic .overview.ov01 .ov01_ul {
+.section.fullpage3 .birdPublic .overview.ov01 .ov01_ul {
   width: 905px;
   height: 379px;
-  margin-left: -35px;
-  padding-top: 25px;
+  margin: 0 auto;
+  padding-top: 40px;
 }
-section.fullpage3 .birdPublic .overview.ov01 .ov01_ul li {
+.section.fullpage3 .birdPublic .overview.ov01 .ov01_ul li {
   width: 25%;
   height: 379px;
   float: left;
 }
-section.fullpage3 .birdPublic .overview.ov01 .ov01_ul li .ov01_div {
+.section.fullpage3 .birdPublic .overview.ov01 .ov01_ul li .ov01_div {
   padding-left: 35px;
 }
-section.fullpage3 .birdPublic .overview.ov01 .ov01_ul li .ov01_div .ou01_img {
+.section.fullpage3 .birdPublic .overview.ov01 .ov01_ul li .ov01_div .ou01_img {
   width: 191px;
   height: 370px;
-  border-radius: 18px;
+  border-radius: 10px;
 }
-section.fullpage3 .birdPublic .overview.ov01 .ov01_ul li .ov01_div .ou01_img img {
+.section.fullpage3 .birdPublic .overview.ov01 .ov01_ul li .ov01_div .ou01_img img {
   width: 100%;
 }
-section.fullpage3 .birdPublic .overview.ov02 {
+.section.fullpage3 .birdPublic .overview.ov02 {
   width: 870px;
   height: 715px;
-  position: absolute;
-  left: 292px;
-  display: none;
+  margin: 0 auto;
 }
-section.fullpage3 .birdPublic .overview.ov02 .bird-title {
+.section.fullpage3 .birdPublic .overview.ov02 .bird-title {
   display: block;
   margin: 0 auto;
   padding: 100px 0 10px 0;
 }
-section.fullpage3 .birdPublic .overview.ov02 .ov02-ul {
+.section.fullpage3 .birdPublic .overview.ov02 .ov02-ul {
   width: 660px;
-  background: blueviolet;
+  margin: 0 auto;
   padding: 0 105px;
 }
-section.fullpage3 .birdPublic .overview.ov02 .ov02-ul li {
+.section.fullpage3 .birdPublic .overview.ov02 .ov02-ul li {
   height: 99px;
   padding-top: 50px;
 }
-section.fullpage3 .birdPublic .overview.ov02 .ov02-ul li .ov02_img {
+.section.fullpage3 .birdPublic .overview.ov02 .ov02-ul li .ov02_img {
   width: 98px;
   height: 99px;
   float: left;
 }
-section.fullpage3 .birdPublic .overview.ov02 .ov02-ul li .ov02_art {
+.section.fullpage3 .birdPublic .overview.ov02 .ov02-ul li .ov02_art {
   float: left;
   margin-left: 65px ;
   text-align: left;
 }
-section.fullpage3 .birdPublic .overview.ov02 .ov02-ul li .ov02_art h3 {
+.section.fullpage3 .birdPublic .overview.ov02 .ov02-ul li .ov02_art h3 {
   margin-top: 12px;
   font-size: 24px ;
   font-weight: normal;
 }
-section.fullpage3 .birdPublic .overview.ov02 .ov02-ul li .ov02_art p {
+.section.fullpage3 .birdPublic .overview.ov02 .ov02-ul li .ov02_art p {
   font-size: 18px;
   font-weight: normal;
 }
-section.fullpage3 .birdPublic .overview.ov03 {
+.section.fullpage3 .birdPublic .overview.ov03 {
   width: 870px;
   height: 715px;
-  position: absolute;
-  left: 292px;
-  display: none;
 }
-section.fullpage3 .birdPublic .overview.ov03 .bird-title {
+.section.fullpage3 .birdPublic .overview.ov03 .bird-title {
   display: block;
   margin: 0 auto;
   padding: 100px 0 55px 0;
 }
-section.fullpage3 .birdPublic .overview.ov03 .schoolQutes {
+.section.fullpage3 .birdPublic .overview.ov03 .schoolQutes {
   position: relative;
 }
-section.fullpage3 .birdPublic .overview.ov03 .schoolQutes .qutes1_left {
+.section.fullpage3 .birdPublic .overview.ov03 .schoolQutes .qutes1_left {
   display: inline-block;
   position: absolute;
   top: 0px;
   left: 200px;
 }
-section.fullpage3 .birdPublic .overview.ov03 .schoolQutes h1 {
+.section.fullpage3 .birdPublic .overview.ov03 .schoolQutes h1 {
   font-size: 48px;
   font-weight: normal;
 }
-section.fullpage3 .birdPublic .overview.ov03 .schoolQutes .qotes1_right {
+.section.fullpage3 .birdPublic .overview.ov03 .schoolQutes .qotes1_right {
   display: inline-block;
   position: absolute;
   top: 60px;
   right: 200px;
 }
-section.fullpage3 .birdPublic .overview.ov03 p {
+.section.fullpage3 .birdPublic .overview.ov03 p {
   display: block;
   text-align: left;
   width: 730px;
+  margin: 0 auto;
   padding: 40px 70px;
   text-indent: 30px;
 }
-section.fullpage3 .birdPublic .overview.ov03 .scrollon {
+.section.fullpage3 .birdPublic .overview.ov03 .scrollon {
   display: block;
   margin: 20px auto;
 }
-section.fullpage4 {
+.section.fullpage4 {
+  width: 100%;
+  height: 100%;
   background: #221236;
   text-align: center;
   color: #fff;
 }
-section.fullpage4 .value {
+.section.fullpage4 .value {
   width: 980px;
   height: 800px;
   padding: 0 16px;
 }
-section.fullpage4 .value h1 {
+.section.fullpage4 .value h1 {
   font-size: 48px;
   text-align: center;
   padding: 100px 0;
 }
-section.fullpage4 .value .value-ul {
+.section.fullpage4 .value .value-ul {
   width: 860px;
   height: 370px;
   padding: 5px 60px;
   position: relative;
-  background: darkgoldenrod;
 }
-section.fullpage4 .value .value-ul li {
+.section.fullpage4 .value .value-ul li {
   width: 50%;
   height: 114px;
   float: left;
 }
-section.fullpage4 .value .value-ul li .value_div {
+.section.fullpage4 .value .value-ul li .value_div {
   padding: 20px 23px;
 }
-section.fullpage4 .value .value-ul li .value_div .value_matters {
+.section.fullpage4 .value .value-ul li .value_div .value_matters {
   width: 373px;
   height: 74px;
 }
-section.fullpage4 .value .value-ul li .value_div .value_matters .value_img {
+.section.fullpage4 .value .value-ul li .value_div .value_matters .value_img {
   width: 74px;
   height: 74px;
   float: left;
   background: url(../../dist/images/aboutxiaoniao/value_quanquan.png);
   text-align: center;
 }
-section.fullpage4 .value .value-ul li .value_div .value_matters .value_img p {
+.section.fullpage4 .value .value-ul li .value_div .value_matters .value_img p {
   padding-top: 23px;
 }
-section.fullpage4 .value .value-ul li .value_div .value_matters .value_matter {
+.section.fullpage4 .value .value-ul li .value_div .value_matters .value_matter {
   float: right;
   width: 280px;
   padding-top: 15px;
   text-align: left;
 }
-section.fullpage4 .value .value-ul .value-top {
+.section.fullpage4 .value .value-ul .value-top {
   width: 980px;
   height: 20px;
   position: absolute;
   top: -5px;
   left: 1px;
 }
-section.fullpage4 .value .value-ul .value-top .value-top-left {
+.section.fullpage4 .value .value-ul .value-top .value-top-left {
   width: 20px;
   height: 20px;
   float: left;
   background: url(../../dist/images/aboutxiaoniao/value_border_11.png);
 }
-section.fullpage4 .value .value-ul .value-top .value-top-left:hover {
+.section.fullpage4 .value .value-ul .value-top .value-top-left:hover {
   background: url(../../dist/images/aboutxiaoniao/value_border_12.png);
 }
-section.fullpage4 .value .value-ul .value-top .value-top-right {
+.section.fullpage4 .value .value-ul .value-top .value-top-right {
   width: 20px;
   height: 20px;
   float: right;
   background: url(../../dist/images/aboutxiaoniao/value_border_21.png);
 }
-section.fullpage4 .value .value-ul .value-top .value-top-right:hover {
+.section.fullpage4 .value .value-ul .value-top .value-top-right:hover {
   background: url(../../dist/images/aboutxiaoniao/value_border_22.png);
 }
-section.fullpage4 .value .value-ul .value-bottom {
+.section.fullpage4 .value .value-ul .value-bottom {
   width: 980px;
   height: 20px;
   position: absolute;
   bottom: -5px;
   left: 1px;
 }
-section.fullpage4 .value .value-ul .value-bottom .value-bottom-left {
+.section.fullpage4 .value .value-ul .value-bottom .value-bottom-left {
   width: 20px;
   height: 20px;
   float: left;
   background: url(../../dist/images/aboutxiaoniao/value_border_31.png);
 }
-section.fullpage4 .value .value-ul .value-bottom .value-bottom-left:hover {
+.section.fullpage4 .value .value-ul .value-bottom .value-bottom-left:hover {
   background: url(../../dist/images/aboutxiaoniao/value_border_32.png);
 }
-section.fullpage4 .value .value-ul .value-bottom .value-bottom-right {
+.section.fullpage4 .value .value-ul .value-bottom .value-bottom-right {
   width: 20px;
   height: 20px;
   float: right;
   background: url(../../dist/images/aboutxiaoniao/value_border_41.png);
+}
+.section.fullpage4 .value .value-ul .value-bottom .value-bottom-right:hover {
+  background: url(../../dist/images/aboutxiaoniao/value_border_42.png);
+}
+.section.fullpage5 {
+  width: 100%;
+  height: 100%;
+  background: #f1f2f6;
+  text-align: center;
+}
+.section.fullpage5 .birdPublic {
+  padding-bottom: 100px ;
+  position: relative;
+  height: 899px;
+  overflow: hidden;
+}
+.section.fullpage5 .birdPublic h1 {
+  font-size: 54px;
+  padding: 50px 0 30px 0;
+  color: #311759;
+}
+.section.fullpage5 .birdPublic .cloud01,
+.section.fullpage5 .birdPublic .cloud02 {
+  width: 1000px;
+  height: 100%;
+  float: left;
+  position: absolute;
+  padding-bottom: 50px;
+  left: 0px;
+}
+.section.fullpage5 .birdPublic .cloud01 p,
+.section.fullpage5 .birdPublic .cloud02 p {
+  width: 910px;
+  display: block;
+  padding: 10px 45px;
+  text-align: left;
+  line-height: 24px;
+  border-bottom: 1px dashed gray;
+}
+.section.fullpage5 .birdPublic .cloud01 p.pt,
+.section.fullpage5 .birdPublic .cloud02 p.pt {
+  text-indent: 30px;
+}
+.section.fullpage5 .birdPublic .cloud02 {
+  position: absolute;
+  float: left;
+  padding-bottom: 50px;
+  left: 1000px;
+}
+.section.fullpage5 .birdPublic .btn {
+  width: 100%;
+  height: 8px;
+  position: absolute;
+  top: 700px;
+}
+.section.fullpage5 .birdPublic .btn .btn_left {
+  width: 78px;
+  height: 8px;
+  border-radius: 8px;
+  float: left;
+  margin-left: 40% ;
+  background: url(../../dist/images/aboutxiaoniao/bird_btn.png);
+  background-position-y: -8px;
+  background-position-x: 0;
+}
+.section.fullpage5 .birdPublic .btn .btn_left.active {
+  background: url(../../dist/images/aboutxiaoniao/bird_btn.png);
+  background-position-y: 0px;
+  background-position-x: 78px;
+  transition: background-position-x 0.5s;
+}
+.section.fullpage5 .birdPublic .btn .btn_right {
+  width: 78px;
+  height: 8px;
+  border-radius: 8px;
+  float: right;
+  margin-right: 40% ;
+  background: url(../../dist/images/aboutxiaoniao/bird_btn.png);
+  background-position-y: -8px;
+}
+.section.fullpage6 {
+  width: 100%;
+  height: 100%;
+  background: url(../../dist/images/aboutxiaoniao/app&contacts_bg.gif);
+  background-size: 100%;
+}
+.section.fullpage6 .app {
+  width: 775px;
+  height: 495px;
+  margin: 130px auto;
+  padding: 0 100px;
+  float: left;
+}
+.section.fullpage6 .app .app_master {
+  width: 100%;
+  height: 320px;
+}
+.section.fullpage6 .app .app_master .code {
+  width: 317px ;
+  height: 315px;
+  float: left;
+  background: url(../../dist/images/aboutxiaoniao/app_downcode.png);
+}
+.section.fullpage6 .app .app_master h1 {
+  font-size: 50px;
+  display: inline-block;
+  width: 250px;
+  float: right;
+  color: #fff;
+  padding: 120px 150px 120px 0;
+}
+.section.fullpage6 .app .service {
+  clear: both;
+  width: 465px;
+  height: 150px;
+  padding-left: 331px ;
+}
+.section.fullpage6 .app .service h1 {
+  font-size: 24px;
+  width: 500px;
+  height: 50px;
+  background: url(../../dist/images/aboutxiaoniao/contacts_line.png) no-repeat;
+  background-position-y: 42px;
+}
+.section.fullpage6 .app .service p {
+  font-size: 18px;
+  line-height: 24px;
 }

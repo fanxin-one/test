@@ -1,9 +1,15 @@
+@import 'normalize';
+
 body,h1,h2,h3,h4,h5,h6,ul,li,p,i{
     margin: 0;
     padding: 0;
     font-style: normal;
     list-style: none;
-    font-family: "microsoft yahei";
+    font-family: STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;;
+}
+body,html{
+   width: 100%;
+   height: 100%;
 }
 a,
 a:link,
@@ -31,14 +37,16 @@ button,span{
     background: url(../../dist/images/aboutxiaoniao/beader_bg.jpg);
     position: fixed;
     top: 0;
+    z-index: 998;
     .birdNav{
-        width: 780px;
+        width: 790px;
         height: 50px;
         padding-left: 245px;
         .logo{
-            width: 132px;
-            height: 50px;
+            width: 134px;
+            height: 41px;
             float: left;
+            padding-top: 7px;
         }
         .nav{
             width: 648px;
@@ -71,14 +79,9 @@ button,span{
                       display: block;
                   }
                 }
-                &.hove{
+                &.active{
                     a{
                        color: #fff; 
-                       .nav-span{
-                           display: block;
-                           top: 30px;
-                           left: 50px;
-                       }
                     }
                     
                     
@@ -88,18 +91,24 @@ button,span{
     }
 }
 
-section{
+.section{
     width: 100%;
-    height: 800px;
+    height: 100%;
+
     //fullpage2
     &.fullpage2{
+        width: 100%;
+        height: 100%;
         background:#221236;
         text-align: center;
         color:#fff;
         .welcome2{
-            width: 400px;
-            height: 401px;
+            width: 224px;
+            height: 200px;
+            display: block;
             margin: 0 auto;
+            padding-top: 115px;
+            padding-bottom: 30px;
         }
         .school{
             h1{
@@ -149,7 +158,8 @@ section{
     
     //fullpage3
     &.fullpage3{
-        position: relative;
+        width: 100%;
+        height: 100%;
             .btn{
                 width: 90%;
                 height: 58px;
@@ -178,23 +188,18 @@ section{
                     }
                 }
             }
-            
             .birdPublic{
-                
+                height: 100%;
+                width: 100%;
                 .overview{
                     width: 870px;
-                    height: 715px;
-                    background: bisque;
+                    margin: 0 auto;
+                    height: 100%;
                     text-align: center;
-                    position: relative;
-                    margin-top:50px ;
                     padding:0 65px;
                     &.ov01{
                         width: 870px;
                         height: 715px;
-                        position: absolute;
-                        left: 292px;
-                        display: none;
                         h1{
                             padding-top: 50px;
                             padding-bottom: 30px;
@@ -203,7 +208,7 @@ section{
                             color: #311759;
                         }
                         .ovqutes{
-                           width:635px ;
+                           width:635px;
                            margin: 0 auto;
                            position: relative;
                            p{
@@ -227,8 +232,8 @@ section{
                         .ov01_ul{
                             width: 905px;
                             height: 379px;
-                            margin-left: -35px;
-                            padding-top: 25px;
+                            margin: 0 auto;
+                            padding-top: 40px;
                             li{
                                 width: 25%;
                                 height: 379px;
@@ -238,7 +243,7 @@ section{
                                     .ou01_img{
                                         width: 191px;
                                         height: 370px;
-                                        border-radius: 18px;
+                                        border-radius: 10px;
                                         img{
                                             width: 100%;
                                         }
@@ -252,9 +257,7 @@ section{
                     &.ov02{
                         width: 870px;
                         height: 715px;
-                        position: absolute;
-                        left: 292px;
-                        display: none;
+                        margin: 0 auto;
                         .bird-title{
                             display: block;
                             margin: 0 auto;
@@ -262,7 +265,7 @@ section{
                         }
                         .ov02-ul{
                             width: 660px;
-                            background: blueviolet;
+                            margin: 0 auto;
                             padding: 0 105px;
                             li{
                                 height: 99px;
@@ -292,9 +295,7 @@ section{
                     &.ov03{
                         width: 870px;
                         height: 715px;
-                        position: absolute;
-                        left: 292px;
-                        display: none;
+//                      z-index: 999;
                         .bird-title{
                             display: block;
                             margin: 0 auto;
@@ -323,6 +324,7 @@ section{
                             display: block;
                             text-align: left;
                             width: 730px;
+                            margin: 0 auto;
                             padding:40px 70px;
                             text-indent: 30px;
                         }
@@ -331,16 +333,15 @@ section{
                             margin: 20px auto;
                         }
                     }
-                    
                 }
-        
         }
-        
     }
 
 
     //fullpage4
     &.fullpage4{
+        width: 100%;
+        height: 100%;
         background:#221236;
         text-align: center;
         color:#fff;
@@ -358,7 +359,6 @@ section{
                 height: 370px;
                 padding: 5px 60px;
                 position: relative;
-                background: darkgoldenrod;
                 li{
                     width: 50%;
                     height: 114px;
@@ -432,10 +432,139 @@ section{
                         height: 20px;
                         float: right;
                         background: url(../../dist/images/aboutxiaoniao/value_border_41.png);
-                        
+                        &:hover{
+                            background: url(../../dist/images/aboutxiaoniao/value_border_42.png);
+                        }
                     }
                 }
             }
         }
     }
+    
+    //fullpage5
+    &.fullpage5{
+        width: 100%;
+        height: 100%;
+        background: #f1f2f6;
+        text-align: center;
+        .birdPublic{
+            padding-bottom: 100px ;
+            position: relative;
+            height: 899px;
+            overflow: hidden;
+            h1{
+                    font-size: 54px;
+                    padding:50px 0 30px 0;
+                    color: #311759; ;
+                }
+            .cloud01,.cloud02{
+                width: 1000px;
+                height: 100%;
+                float: left;
+                position: absolute;
+                padding-bottom: 50px;
+                left: 0px;//400
+                p{
+                    width: 910px;
+                    display: block;
+                    padding: 10px 45px;
+                    text-align: left;
+                    line-height: 24px;
+                    border-bottom: 1px dashed gray;
+                    &.pt{
+                      text-indent: 30px;  
+                    }
+                }
+            }
+            .cloud02{
+                position: absolute;
+                float: left;
+                padding-bottom: 50px;
+                left: 1000px;
+            }
+            
+            .btn{
+                width: 100%;
+                height: 8px;
+                position: absolute;
+                top: 700px;
+                .btn_left{
+                    width: 78px;//78px
+                    height: 8px;
+                    border-radius: 8px;
+                    float: left;
+                    margin-left:40% ;
+                    background: url(../../dist/images/aboutxiaoniao/bird_btn.png);
+                    background-position-y: -8px;
+                    background-position-x: 0;
+                    &.active{
+                        background: url(../../dist/images/aboutxiaoniao/bird_btn.png);
+                        background-position-y: 0px;
+                        background-position-x: 78px;
+                        transition: background-position-x 0.5s;
+                    }
+                    
+                }
+                .btn_right{
+                    width: 78px;
+                    height: 8px;
+                    border-radius: 8px;
+                    float: right;
+                    margin-right:40% ;
+                    background: url(../../dist/images/aboutxiaoniao/bird_btn.png);
+                    background-position-y: -8px;
+                }
+            }
+        }
+        
+    }
+    &.fullpage6{
+        width: 100%;
+        height: 100%;
+        background: url(../../dist/images/aboutxiaoniao/app&contacts_bg.gif);
+        background-size: 100%;
+        .app{
+            width: 775px;
+            height: 495px;
+            margin: 130px auto;
+            padding: 0 100px;
+            float: left;
+            .app_master{
+                width: 100%;
+                height: 320px;
+                .code{
+                    width: 317px ;
+                    height: 315px;
+                    float: left;
+                    background: url(../../dist/images/aboutxiaoniao/app_downcode.png);
+                }
+                h1{
+                    font-size: 50px;
+                    display: inline-block;
+                    width: 250px;
+                    float: right;
+                    color: #fff;
+                    padding:120px 150px 120px 0;
+                }
+            }
+            .service{
+                clear: both;
+                width: 465px;
+                height: 150px;
+                padding-left:331px ;
+                h1{
+                    font-size: 24px;
+                    width: 500px;
+                    height: 50px;
+                    background: url(../../dist/images/aboutxiaoniao/contacts_line.png) no-repeat;
+                    background-position-y: 42px;
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    
 }

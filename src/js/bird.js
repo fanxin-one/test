@@ -1,48 +1,24 @@
 //bird导航栏
+
+$(document).ready(function() {
+	$('#fullpage').fullpage({
+		anchors: ['fullpage2', 'fullpage3', 'fullpage4', 'fullpage5', 'fullpage6'],
+		menu: '#Menu'
+	});
+});
+
+//滚动条
+
 $(function(){
-	$('.birdheader .birdNav .nav .nav-li a ').hover(function(){
-		$(this).find('.nav-span').animate({
-			top:'30px',
-			left:'50px'
-		},500);
-		
-	},function(){
-		$(this).find('.nav-span').animate({
-			top:'0px',
-			left:'0px'
-		},500,function(){
-			$(this).hide();
+	$('.fullpage5 .birdPublic .btn .btn_left').on('click',function(){
+		$('.fullpage5 .birdPublic .cloud02').animate({left:'1000px'},500,function(){
+			$('.fullpage5 .birdPublic .cloud01').animate({left:'0'},500);
 		});
 	})
-	
-});
-//概述部分
-$(function(){
-	var index=0;
-	$('.section .ov01').show();
-	$('.section  .birdPublic .btn02-left').on('click',function(){
-		btn_left();
-		switch(index){
-			case 0:
-//			$('.section .ov02').css({
-//				display:'block',
-//				left:'292px'
-//			});
-			break;
-			
-		}
+	$('.fullpage5 .birdPublic .btn .btn_right').on('click',function(){
+//		$(this).addClass('active');
+		$('.fullpage5 .birdPublic .cloud01').animate({left:'-1000px'},500,function(){
+			$('.fullpage5 .birdPublic .cloud02').animate({left:'0'},500);
+		})
 	})
-	$('.section  .birdPublic .btn02-right').on('click',function(){
-		alert(2);
-	})
-	function btn_left(){
-		$('.section .ov02').css('left','850px');
-		$('.section .ov03').css('left','850px');
-		$('.section .ov01').css('left','850px');
-	}
-	function btn_right(){
-		$('.section .ov02').css('left','0px');
-		$('.section .ov03').css('left','0px');
-		$('.section .ov01').css('left','0px');
-	}
 });

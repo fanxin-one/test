@@ -1,0 +1,164 @@
+@import 'header';
+@import 'footer';
+@import 'normalize';
+@import 'var';
+p,h1,h2,h3,h6,i{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+}
+.state{
+    width: 100%;
+    background: #f1f2f6;
+    .public{
+        .master{
+            width: 1100px;
+            padding: 0 10px;
+            .title{
+                width: 100%;
+                text-align: center;
+                padding-top: 100px;
+                padding-bottom: 60px;
+                h1{
+                    font-size: 60px;
+                    line-height: 60px;
+                    color: #311759;
+                }
+                p{
+                   color: #311759; 
+                   font-size: 18px;
+                   
+                   line-height: 24px;
+                }
+            }
+            .list-title{
+                width: 100%;
+                height: 95px;
+                position: relative;
+                    h2{
+                        font-size: 34px;
+                        line-height: 34px;
+                        color: #311759;
+                        padding-bottom: 18px;
+                    }
+                    .pen{
+                        width: 61px;
+                        height: 58px;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        background: url(../../dist/images/pen_list.png);
+                        &:hover{
+                            background: url(../../dist/images/pen_list.png);
+                            background-position-x: -61px;
+                        }
+                    }
+                    .pen-line{
+                        width: 93%;
+                        height: 2px;
+                        padding-top: 15px;
+                        background: url(../../dist/images/product-line-text.png) no-repeat;
+                    }
+            }
+            .state-ul{
+                width: 1130px;
+                margin-left: -30px;
+                li{
+                    width: 50%;
+                    height: 250px;
+                    float: left;
+                    .state-div{
+                       margin-left: 30px;
+                       background: #fff;
+                       border: 1px solid #FFFFFF;
+                       cursor: pointer;
+                       position: relative;
+                       &:hover{
+                           border: 1px solid #000000;
+                       }
+                       .state-span{
+                           border-top: 10px solid #fff;
+                           border-left:6px solid transparent;
+                           border-right:6px solid transparent;
+                           position: absolute;
+                           top: 20px;
+                           left:0px;//60px
+                           
+                       }
+                       &:hover .state-span{
+                           left:60px;
+                           transition: left 0.3s;
+                       }
+                        .state-master{
+                            width: 496px;
+                            height: 170px;
+                            margin: 20px 20px;
+                            .state-img{
+                               width: 260px;
+                               height: 170px;
+                               float: left;
+                               img{
+                                   width: 100%;
+                                   display: block;
+                               }
+                           }
+                           .state-art{
+                               width: 225px;
+                               margin-left: 10px;
+                               float: right;
+                                h6{
+                                  padding-top: 15px;
+                                  font-size: 20px;
+                                  line-height: 28px;  
+                                  font-style: normal; 
+                                }
+                                i{
+                                    font-size: 14px;
+                                    color: #8d8c90;
+                                    line-height: 24px;
+                                }
+                                p{
+                                    font-size: 14px ;
+                                    line-height: 20px;
+                                }
+                           }
+                        }
+                    }
+                }
+            }
+            .go{
+                width: 107px;
+                height: 400px;
+                margin: 0px auto;
+                .gomore{
+                    width: 107px;
+                    height: 175px;
+                    img{
+                        width: 100%;
+                        display: block;
+                    }
+                }
+                .more{
+                    width: 58px;
+                    height: 58px;
+                    margin: 24.5px;
+                    background: url(../../dist/images/aboutxiaoniao/donext.png);
+                    background-position-y: -58px;
+                    border: none;
+                    outline: none;
+                    &:hover{
+                       background: url(../../dist/images/aboutxiaoniao/donext.png);
+                        background-position-y: 0px; 
+                        transition: background-position-y 0.3s;
+                    }
+                }
+            }
+        }
+    }
+    .top{
+        width: 100%;
+        height: 33px;
+        background: url(../../dist/images/map_bottomimg.png); 
+        background-position-x: 50%;       
+    }
+}
