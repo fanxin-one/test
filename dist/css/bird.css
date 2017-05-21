@@ -466,22 +466,8 @@ span {
   padding: 0 20px;
   position: relative;
 }
-.birdheader .birdNav .nav .nav-li a .nav-span {
-  width: 4px;
-  height: 4px;
-  display: block;
-  position: absolute;
-  background: url(../../dist/images/nav-now-bg.png);
-  border-radius: 100%;
-  top: 0px;
-  left: 0px;
-  display: none;
-}
 .birdheader .birdNav .nav .nav-li a:hover {
   color: #fff;
-}
-.birdheader .birdNav .nav .nav-li a:hover .nav-span {
-  display: block;
 }
 .birdheader .birdNav .nav .nav-li.active a {
   color: #fff;
@@ -683,6 +669,7 @@ span {
 .section.fullpage3 .birdPublic .overview.ov03 {
   width: 870px;
   height: 715px;
+  z-index: 999;
 }
 .section.fullpage3 .birdPublic .overview.ov03 .bird-title {
   display: block;

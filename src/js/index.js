@@ -333,24 +333,24 @@ $(function(){
 		$('.business .business-ul .btn').on('click',function(){
 		$(this).parent().find($('.business .business-ul .art-3')).slideToggle();
 		if(show)
-		{
-			$(this).animate({
-				backgroundImage:'url(dist/images/business-btn.png)',
-				backgroundPositionY:67,
-				transition:'backgroundPositionY 0.3s'
-			});
-			show = false;
-		}else{
-			hover_btn();
-			$('.business .business-ul .btn').animate({
-				backgroundImage:'url(dist/images/business-btn.png)',
-				backgroundPositionY:0,
-				transition:'backgroundPositionY 0.3s'
-			});
-			show = true;
-		}
-	
+				{
+					$(this).animate({
+						backgroundImage:'url(dist/images/business-btn.png)',
+						backgroundPositionY:67,
+						transition:'backgroundPositionY 0.3s'
+					});
+					show = false;
+				}else{
+					hover_btn();
+					$('.business .business-ul .btn').animate({
+						backgroundImage:'url(dist/images/business-btn.png)',
+						backgroundPositionY:0,
+						transition:'backgroundPositionY 0.3s'
+					});
+					show = true;
+				}
 	});
+	
 	//按钮弹得效果函数
 	function hover_btn(){
 		$('.business .business-ul .btn').hover(function(){
@@ -365,6 +365,30 @@ $(function(){
 		},function(){
 			$(this).removeClass('animated bounceIn');
 	});
+
+	$('.business .business-ul .cimg .img').on('click',function(){
+		$(this).parent().siblings($('.art-3')).slideToggle();
+		if(show)
+			{
+				$(this).parent().siblings($(' .btn')).animate({
+					backgroundImage:'url(dist/images/business-btn.png)',
+					backgroundPositionY:67,
+					transition:'backgroundPositionY 0.3s'
+				});
+				show = false;
+			}else{
+				hover_btn();
+			$(this).parent().siblings($(' .btn')).animate({
+					backgroundImage:'url(dist/images/business-btn.png)',
+					backgroundPositionY:0,
+					transition:'backgroundPositionY 0.3s'
+				});
+				show = true;
+			}
+		
+		
+	})
+	
 	
 	
 });
